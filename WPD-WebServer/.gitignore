@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+
+#configuration file
+config.js
+
+#uploaded images and video for testing
+/app/floodmemory/uploads/images/*

@@ -1,0 +1,32 @@
+{
+  "name": "wpd_webportal_server",
+  "version": "0.9.1",
+  "description": "WPD Webportal API Server which runs on Node.js on Docker",
+  "author": "Mohammed Rizwan Khan<rizwan@uni-heidelberg.de>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./app/server.js",
+    "dev": "nodemon ./app/server.js"
+  },
+  "dependencies": {
+    "@small-tech/express-ws": "^1.0.1",
+    "@turf/boolean-point-in-polygon": "^6.0.1",
+    "bole": "^4.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.1",
+    "graphql.js": "^0.6.6",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.24.0",
+    "multer": "^1.4.2",
+    "node-geocoder": "^3.27.0",
+    "pg-listen": "^1.7.0",
+    "pg-promise": "^10.10.2",
+    "shortid": "^2.2.15",
+    "turf": "^3.0.14",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

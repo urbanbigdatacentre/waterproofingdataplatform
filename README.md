@@ -2,6 +2,16 @@
 ![](wpd_logo.png)
 
 
+## Waterproofing Data
+
+Waterproofing Data investigates the governance of water-related risks, with a focus on social and cultural aspects of data practices.
+The project has been conducted by a highly skilled international team of researchers with multiple disciplinary backgrounds from Brazil, 
+Germany and the UK, in close partnership with researchers, stakeholders and the public of a multi-site case study on 
+flood risk management in Brazil. Furthermore, the methods and results of this case study will be the basis for a 
+transcultural dialogue with government organisations and local administration involved in flood risk management in 
+Germany and the United Kingdom.
+
+
 ## About this repo
 
 This is a repository that compiles the different components developed for the [Waterproofing Data project](https://www.ubdc.ac.uk/research/research-projects/urban-sustainability-participation/waterproofing-data/).
@@ -32,6 +42,13 @@ The resources were created using [read-the-docs](https://readthedocs.org/) servi
 To deploy this component, you need to install `sphinx` compiler and the documentation theme to your local machine, preferably using python package manager. 
 
 ## 2. WPD Mobile App
+
+Access ---> [WPD-MoobileApp](WPD-MobileApp)
+
+This is the module for the mobile application [Water]. This application allows citizens to register self-made rainfall gauges, collect their rainfall measures and report rain and flood events.
+The module contains the components developed for a mobile app using [React Native](https://reactnative.dev/) and [Expo](https://docs.expo.io/). For running unit tests, you can use [Jest](https://docs.expo.io/guides/testing-with-jest).
+
+## 3. WPD Query API Server
 
 Access ---> [WPD-MoobileApp](WPD-MobileApp)
 
