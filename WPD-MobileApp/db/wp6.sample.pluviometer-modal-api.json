@@ -1,0 +1,78 @@
+JSON intended to display pluviometer data on modal
+ws: //waterproofing.geog.uni-heidelberg.de/wss/hot/data?type=PLUVIOMETERS_FORM
+{
+    "responseData": {
+        "array_to_json": [
+            {
+                "formcode": "PLUVIOMETERS_FORM",
+                "formsanswersuserinformer": "admin@wpd.com",
+                "fias": [
+                    {
+                        "username": "Fulano",
+                        "userrole": "Professor",
+                        "institutionname": "E.E. Vicente Leporace",
+                        "address": "Rua Nassau",
+                        "pluviometerformsanswers": [
+                            {
+                                "fieldsanswersdate": "11/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "21:52",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "10/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "21:52",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "09/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "21:52",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "08/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "21:52",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "07/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "21:52",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "06/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "21:52",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "06/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "09:30",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            },
+                            {
+                                "fieldsanswersdate": "05/02",
+                                "fieldsanswersrainamount": 5,
+                                "fieldsanswerseventtime": "09:30",
+                                "fielsanswerimages": "base64",
+                                "fielsanswercomment": "users description about the current event"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

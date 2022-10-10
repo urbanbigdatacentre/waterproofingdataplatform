@@ -1,0 +1,23 @@
+This JSON is used to insert Pluviometer data into datalake
+ws: //waterproofing.geog.uni-heidelberg.de/wss/hot/data?type=PLUVIOMETERS_REGISTRATION
+{
+    "responseData": {
+        "array_to_json": [
+            {
+                "formcode": "PLUVIOMETERS_REGISTRATION",
+                "formsanswersuserinformer": "admin@wpd.com",
+                "fieldsanswerslongitude": -74.1179903701844,
+                "fieldsanswerslatitude": 4.750550953715424,
+                "filds": [
+                    {
+                        "fieldsanswerseventaddress": "Rua dos bobos, 81",
+                        "fieldsanswerseventdate": "11-08-2021",
+                        "fieldsanswerseventtime": "21:52",
+                        "fieldsanswersinstitutename": "E. E. Vagner",
+                        "fieldsanswerrinstitutetype": "Escola"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+JSON intended to insert pluviometer forms data into datalake
+ws: //waterproofing.geog.uni-heidelberg.de/wss/hot/data?type=PLUVIOMETERS_FORM
+{
+    "responseData": {
+        "array_to_json": [
+            {
+                "formcode": "PLUVIOMETERS_FORM",
+                "formsanswersuserinformer": "admin@wpd.com",
+                "fias": [
+                    {
+                        "fieldsanswersdate": "11/02",
+                        "fieldsanswersrainamount": 5,
+                        "fieldsanswerseventtime": "21:52",
+                        "fielsanswerimages": "base64",
+                        "fielsanswercomment": "users description about the current event"
+                    }
+                ]
+            }
+        ]
+    }
+}

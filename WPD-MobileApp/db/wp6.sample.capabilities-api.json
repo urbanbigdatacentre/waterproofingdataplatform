@@ -1,0 +1,58 @@
+JSON intended to get all forms  
+https: //waterproofing.geog.uni-heidelberg.de/api/hot/capability
+{
+    "responseTimestamp": "2021-08-05T19:23:50.126Z",
+    "responseData": {
+        "array_to_json": [
+            {
+                "code": "FLOODZONES_OFFICIAL",
+                "name": "Flooding susceptible areas",
+                "description": "CPRM areas with classes of susceptibility to flooding",
+                "source": "CPRM"
+            },
+            {
+                "code": "PLUVIOMETERS_OFFICIAL",
+                "name": "Pluviometer stations",
+                "description": "Rainfall stations",
+                "source": "CEMADEN"
+            },
+            {
+                "code": "WEATHER_FORECAST",
+                "name": "Weather forecast",
+                "description": "Weather forecast",
+                "source": "Climatempo"
+            },
+            {
+                "code": "FLOODZONES_FORM",
+                "name": "Flood Zones",
+                "description": "FloodZones Form",
+                "source": "citizen"
+            },
+            {
+                "code": "PLUVIOMETER_FORM",
+                "name": "Pluviometer",
+                "description": "Pluviometers Form",
+                "source": "citizen"
+            },
+            {
+                "code": "RAIN_FORM",
+                "name": "Rain",
+                "description": "Rain zones Form",
+                "source": "citizen"
+            },
+            {
+                "code": "RIVERFLOOD_FORM",
+                "name": "River Flood",
+                "description": "River Flood Form",
+                "source": "citizen"
+            },
+            {
+                "code": "PLUVIOMETER_REGISTRATION",
+                "name": "Pluviometer registration",
+                "description": "Pluviometer registration",
+                "source": "citizen"
+            }
+        ]
+    },
+    "success": true
+}

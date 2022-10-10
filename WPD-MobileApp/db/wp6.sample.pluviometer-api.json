@@ -1,0 +1,20 @@
+JSON intended to display pluviometer icons on map
+ws: //waterproofing.geog.uni-heidelberg.de/wss/hot/data?type=PLUVIOMETERS_FORM
+{
+	"responseData": {
+		"array_to_json": [
+			{
+				"formcode": "PLUVIOMETERS_FORM",
+				"formsanswersuserinformer": "admin@wpd.com",
+				"fieldsanswerslatitude": 4.750550953715424,
+				"fieldsanswerslongitude": -74.1179903701844
+			},
+			{
+				"formcode": "PLUVIOMETERS_FORM",
+				"formsanswersuserinformer": "admin222@wpd.com",
+				"fieldsanswerslatitude": 4.23876482872188,
+				"fieldsanswerslongitude": -79.1179903701844
+			}
+		]	
+	}
+}

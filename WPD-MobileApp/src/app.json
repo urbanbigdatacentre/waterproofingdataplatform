@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Dados à Prova d'Água",
+    "slug": "dados-a-prova-dagua",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./app/assets/icons/app-icon.png",
+    "splash": {
+      "image": "./app/assets/icons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Enable Camera Acess so that you can record  Videos",
+        "NSPhotoLibraryUsageDescription": "Enable Camera Roll Access so that you can select Other Videos from Camera Roll"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/appLogo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.dadosaprovadagua.wpdmobileapp",
+      "versionCode": 3
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "description": "",
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    }
+  }
+}
