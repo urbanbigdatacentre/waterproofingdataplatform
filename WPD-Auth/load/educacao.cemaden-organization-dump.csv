@@ -1,0 +1,208 @@
+"id","active","name","creation_date","inep_code","phone","type","website","login","address","responsible"
+16,True,"Defesa Civil de Monte Mor","2017-06-06 14:04:13.48",NULL,"(19) 38799881","CIVIL_DEFENSE",NULL,19,16,16
+17,True,"Proteção e Defesa Civil de Itu","2017-06-08 15:30:38.606",NULL,"(11) 940039394","CIVIL_DEFENSE",NULL,20,17,17
+12,True,"Universidade de Taubaté - EAD","2017-05-30 16:12:34.286",NULL,"(12) 982108807","OTHER",NULL,15,12,12
+45,True,"Defesa Civil Municipal de Erechim","2017-11-01 09:59:52.026",NULL,"(54) 35207136","CIVIL_DEFENSE","http://defesacivil.erechim.rs.gov.br",48,45,45
+13,True,"Universidade de Taubaté","2017-05-30 20:06:18.685",NULL,"(12) 997998294","OTHER",NULL,16,13,13
+32,True,"EE Prof Florentina Martins Sanchez","2017-09-12 09:19:46.589","35011162","(12) 38420270","SCHOOL",NULL,35,32,32
+22,True,"Escola Estadual Florentina Martins Sanches","2017-07-12 14:18:12.618","35011162","(12) 38420270","SCHOOL",NULL,25,22,22
+23,True,"Defesa Civil de Mesquita","2017-07-12 18:56:28.771",NULL,"(21) 964238753","CIVIL_DEFENSE",NULL,26,23,23
+8,True,"E.E. Prof. Iris Célia Cabanellas Zannini","2017-05-20 22:11:41.985",NULL,"(68) 999617866","SCHOOL",NULL,11,8,8
+7,True,"E.E. Divina Providência","2017-05-18 11:11:15.072","12017540","(68) 999256116","SCHOOL",NULL,10,7,7
+25,True,"Subsecretaria Municipal de Proteção e Defesa Civil de Nova Iguaçu","2017-08-03 13:43:01.545",NULL,"(21) 37790660","CIVIL_DEFENSE",NULL,28,25,25
+33,True,"Escola Estadual Professor Expedito Camargo Freire","2017-09-14 13:03:58.743","35442550","(12) 36623311","SCHOOL",NULL,36,33,33
+53,True,"Instituto Federal do Norte de Minas Gerais - Campus Almenara","2018-01-11 14:22:40.691","1056995","(38) 32013050","SCHOOL","http://www.ifnmg.edu.br",56,53,53
+10,True,"E.E. Dr. Pereira de Mattos","2017-05-24 21:10:21.692","35049219","(12) 36533947","SCHOOL",NULL,13,10,10
+9,True,"E.E. Paulo Virgínio","2017-05-23 16:38:19.981","35012774","(12) 31111325","SCHOOL",NULL,12,9,9
+15,True,"Secretaria Municipal de Educação da Estância Turística de Guaratinguetá","2017-06-06 12:41:18.361",NULL,"(12) 31287777","OTHER",NULL,18,15,15
+36,True,"Coordenadoria de Defesa Civil de Torres","2017-09-18 17:16:50.643",NULL,"(51) 997085028","CIVIL_DEFENSE",NULL,39,36,36
+27,True,"Escola Estadual de Ensino Médio Belo Porvir","2017-08-04 18:30:09.626","12031674","(68) 999639470","SCHOOL","http://escolabeloporvirac.blogspot.com.br",30,27,27
+21,True,"E.E. Alexandre Fleming - Ensino Integral","2017-07-11 09:09:43.029",NULL,"(19) 36411163","SCHOOL",NULL,24,21,21
+24,True,"COMDEC - Prefeitura de São Bento do Sapucaí","2017-07-19 11:40:13.266",NULL,"(12) 39716110","CIVIL_DEFENSE","http://https://www.saobentodosapucai.sp.gov.br/site/",27,24,24
+20,True,"Brigada Municipal de Angra dos Reis","2017-07-05 23:01:46.333",NULL,"(24) 885119942","NGO","http://CAP SELVA BMA JAIRO FRANÇA",23,20,20
+26,True,"E.E. Argentina Pereira Feitosa","2017-08-04 17:07:04.528","12009725","(68) 32341303","SCHOOL",NULL,29,26,26
+37,True,"EE Prof Theodoro Corrêa Cintra","2017-09-19 11:58:50.89","35013286","(12) 36621700","SCHOOL",NULL,40,37,37
+30,True,"Escola Municipal da Topolândia","2017-08-30 17:26:34.329","35448916","(12) 38925009","SCHOOL",NULL,33,30,30
+31,True,"Instituto Federal de Educação e Tecnologia","2017-09-02 21:25:47.354",NULL,"(85) 999194398","OTHER",NULL,34,31,31
+52,True,"Instituto Federal de Educação Ciência e Tecnologia Fluminense","2018-01-11 13:24:38.031","000002766760","(21) 26379700","SCHOOL","http://iff.edu.br/",55,52,52
+38,True,"Centro Universitário Serra dos Órgãos","2017-09-25 17:33:17.427",NULL,"(24) 988097121","OTHER",NULL,41,38,38
+28,True,"Escola Municipal Engº Sérgio Dias Freitas","2017-08-23 09:55:24.043",NULL,"(13) 988020287","SCHOOL",NULL,31,28,28
+11,True,"EDAM - Escola Doutor Augusto Monteiro","2017-05-25 16:34:38.602","12012297","(68) 999117003","SCHOOL",NULL,14,11,11
+46,True,"Coordenadoria Municipal de Defesa Civil de Tanguá","2017-11-01 17:00:18.864",NULL,"(21) 27474104","CIVIL_DEFENSE","http://defesacivil.tangua.rj.gov.br",49,46,46
+44,True,"Prof. José Wadie Milad","2017-10-09 16:12:35.942","35908046","(12) 36428239","SCHOOL",NULL,47,44,44
+59,True,"E.E. Santo Dias da Silva","2018-01-31 18:28:47.048",NULL,"(11) 56610943","SCHOOL",NULL,62,59,59
+48,True,"Universidade Federal Rural do Rio de janeiro","2017-11-06 00:04:54.137",NULL,"(21) 995922248","OTHER",NULL,51,48,48
+19,True,"Secretaria Municipal de Defesa Civil e Trânsito de Angra dos Reis","2017-07-01 13:29:24.088",NULL,"(24) 999071231","CIVIL_DEFENSE",NULL,22,19,19
+14,True,"Universidade de Taubaté","2017-06-01 16:18:12.406",NULL,"(17) 997367440","OTHER",NULL,17,14,14
+56,True,"EE Prof Francisco Pereira da Silva","2018-01-31 10:51:27.744",NULL,"(12) 39295572","SCHOOL",NULL,59,56,56
+35,True,"E.E. Dr. Alfredo Pujol","2017-09-14 17:06:51.864",NULL,"(12) 36432777","SCHOOL",NULL,38,35,35
+41,True,"E.M. Áurea Pires da Gama","2017-09-30 22:00:17.604",NULL,"(24) 33631236","SCHOOL",NULL,44,41,41
+49,True,"Coordenadoria Municipal de Defesa Civil de Vargem Grande do Sul","2017-11-07 16:57:37.628",NULL,"(19) 36415877","CIVIL_DEFENSE",NULL,52,49,49
+51,True,"Coordenadoria Municipal de Proteção e Defesa Civil de Nazareno","2017-12-28 14:31:55.94",NULL,"(35) 998232700","CIVIL_DEFENSE",NULL,54,51,51
+50,True,"Instituto Ilhabela Sustentável","2017-12-19 17:12:11.257",NULL,"(12) 997937853","NGO","http://www.iis.org.br",53,50,50
+54,True,"Coordenação Municipal de Proteção e Defesa Civil de Feira de Santana","2018-01-12 16:37:13.881",NULL,"(75) 36264618","CIVIL_DEFENSE",NULL,57,54,54
+57,True,"Secretaria de Proteção e Defesa Civil de Magé (SEMPDEC)","2018-01-31 15:18:26.043",NULL,"(21) 27394512","CIVIL_DEFENSE","http://www.facebook.com/pg/dcmage/about/",60,57,57
+29,True,"Coordenadoria Municipal de Defesa Civil de Baião","2017-08-28 09:21:57.94",NULL,"(91) 996311999","CIVIL_DEFENSE","http://https://www.facebook.com/COMDECBAIAO/",32,29,29
+58,True,"Universidade de Mogi das Cruzes","2018-01-31 17:15:19.826",NULL,"(11) 47987000","OTHER",NULL,61,58,58
+47,True,"Organizaçã Bombeiros Unidos Sem Fronteiras - BUSF-CPLP","2017-11-03 13:21:26.995",NULL,"(11) 947239000","NGO","http://www.busfbrasil.org.br",50,47,47
+55,False,"Estacionamento144","2018-01-21 08:27:47.618",NULL,"(33) 988164696","OTHER",NULL,58,55,55
+83,True,"Defesa Civil de Guarujá","2018-04-05 14:44:17.346",NULL,"(13) 33554976","CIVIL_DEFENSE",NULL,87,83,83
+84,True,"Defesa Civil de Rio Claro","2018-04-05 14:45:12.685",NULL,"(19) 35343199","CIVIL_DEFENSE",NULL,88,84,84
+85,True,"Coordenadoria Especial de Defesa Civil de Atibaia","2018-04-05 14:50:09.976",NULL,"(11) 44140422","CIVIL_DEFENSE",NULL,89,85,85
+65,True,"Departamento de Defesa Civil do Município da Estância Balneária de Praia Grande - São Paulo","2018-02-02 11:24:41.863",NULL,"(13) 34965131","CIVIL_DEFENSE",NULL,68,65,65
+66,True,"Defesa Civil de Estância Velha","2018-02-02 13:48:01.369",NULL,"(51) 998491761","CIVIL_DEFENSE",NULL,69,66,66
+86,True,"Defesa Civil de Osvaldo Cruz/Sp","2018-04-05 14:48:14.451",NULL,"(18) 35291877","CIVIL_DEFENSE",NULL,90,86,86
+60,True,"6° Coordenadoria Regional de Proteção e Defesa Civil do Rio Grande do Sul","2018-02-01 07:07:04.506",NULL,"(55) 999566385","CIVIL_DEFENSE","http://www.defesacivil.rs.gov.br",63,60,60
+68,True,"E.M. Prof. Guiomar Aparecida da Conceição Sousa","2018-02-16 13:05:30.19","35057204","(12) 38652400","SCHOOL",NULL,71,68,68
+61,True,"Coodenadoria Municipal de Proteçao e Defesa Civil de Bragança","2018-02-01 13:44:54.726",NULL,"(91) 984010324","CIVIL_DEFENSE","http://hotmail.com",64,61,61
+70,True,"Prefeitura Municipal de Magé RJ","2018-02-21 14:52:23.447",NULL,"(21) 964334933","OTHER","http://Rogerio dos Santos |Rodrigues",74,70,70
+71,True,"Coordenadoria Municipal de Proteção e Defesa Civil","2018-03-01 05:32:28.733",NULL,"(73) 999812344","CIVIL_DEFENSE",NULL,75,71,71
+72,True,"Coordenadoria de Defesa Civil de Pirassununga","2018-03-06 11:19:23.665",NULL,"(19) 35611279","CIVIL_DEFENSE",NULL,76,72,72
+73,True,"Defesa Civil Sumaré","2018-03-08 12:05:42.198",NULL,"(19) 39034147","CIVIL_DEFENSE",NULL,77,73,73
+74,True,"ETEC PROFESSOR JOSE SANT'ANA DE CASTRO","2018-03-08 19:26:35.521","35012518","(12) 31441207","SCHOOL","http://www.eteccruzeiro.com.br/",78,74,74
+75,True,"COOEDENADORIA ESTADUAL DE DEFESA CIVIL","2018-03-13 08:59:15.352",NULL,"(85) 31014620","CIVIL_DEFENSE","http://defesacivil.cb.ce.gov.br",79,75,75
+76,True,"E.E. PROF. MARIA APARECIDA FRANÇA BARBOSA DE ARAÚJO","2018-03-13 17:23:14.705","35906748","(12) 36523120","SCHOOL",NULL,80,76,76
+77,True,"EE Dr. Pereira de Mattos","2018-03-26 08:17:33.41","35049219","(12) 36533947","SCHOOL",NULL,81,77,77
+78,True,"Secretaria de Estado de Educação e Esporte SEE Acre","2018-03-28 09:39:19.133",NULL,"(68) 92060295","OTHER",NULL,82,78,78
+80,True,"Secretaria Municipal de Agricultura e Meio Ambiente de Quadra/SP","2018-04-05 14:25:30.092",NULL,"(15) 32536116","OTHER",NULL,84,80,80
+81,True,"Defesa Civil de Campos do Jordão/SP","2018-04-05 14:35:33.38",NULL,"(12) 997264126","CIVIL_DEFENSE",NULL,85,81,81
+82,True,"Diretoria de Ensino Norte I","2018-04-05 14:37:37.275",NULL,"(12) 38699768","OTHER",NULL,86,82,82
+87,True,"Defesa Civil de Franco da Rocha","2018-04-05 14:57:02.057",NULL,"(11) 48006658","CIVIL_DEFENSE",NULL,91,87,87
+64,True,"Centro Territorial de Educação Profissional do Litoral Sul - Comunidade Quilombola","2018-02-01 22:07:36.949",NULL,"(73) 32582035","SCHOOL",NULL,67,64,64
+98,True,"Escola Municipal Cidade da Criança","2018-06-06 09:40:06.448","35274793","(13) 34932636","SCHOOL",NULL,102,98,98
+108,True,"E. M. PRESIDENTE TANCREDO DE ALMEIDA NEVES","2018-07-04 16:08:07.814","035070212","(12) 38337600","SCHOOL","http://https://www.ubatuba.sp.gov.br/mapa/e-m-presidente-tancredo-de-almeida-neves/",112,108,108
+94,True,"Colégio Univille São Francisco do Sul","2018-05-14 09:37:55.667","00000081","(47) 34713802","SCHOOL",NULL,98,94,94
+91,True,"E.E. Dra. Isabel Campos","2018-04-20 12:54:48.471","032190","(18) 32711402","SCHOOL",NULL,95,91,91
+89,True,"COORDENADORIA MUNICIPAL DE PROTEÇÃO E DEFESA CIVIL DE BARUERI","2018-04-13 09:21:47.048",NULL,"(11) 41991400","CIVIL_DEFENSE",NULL,93,89,89
+88,True,"E.E.Profª Edir Paulino Albuquerque","2018-04-13 08:45:53.655",NULL,"(11) 46550071","SCHOOL",NULL,92,88,88
+115,True,"ESCOLA MUNICIPAL CIDADE DA CRIANÇA","2018-07-05 14:12:58.126","274793","(13) 34962636","SCHOOL",NULL,119,115,115
+95,True,"Prefeitura Municipal de Jacareí","2018-05-16 10:29:18.595",NULL,"(12) 39559700","OTHER",NULL,99,95,95
+79,True,"IFPB - Campus Princesa Isabel","2018-03-29 15:16:07.079",NULL,"(83) 999853166","SCHOOL","http://www.ifpb.edu.br/princesaisabel",83,79,79
+69,True,"Escola Estadual Professora ""Alcina Moraes Salles""","2018-02-18 21:21:22.47","35922018","(12) 39661699","SCHOOL","http://www.facebook.com/AulasBruno",72,69,69
+99,True,"MARILDA GOUVEIA VIANA","2018-06-25 15:20:59.437","12011932","(68) 999782872","SCHOOL","http://https://www.facebook.com/mgvoficial2018/",103,99,99
+93,True,"iInstituto dos Cegos do Estado de Mato Grosso","2018-05-11 11:28:02.314",NULL,"(65) 36461400","NGO","http://educacaoeparticipacao.org.br/instituicoes/instituto-dos-cegos-do-estado-de-mato-grosso/",97,93,93
+97,True,"Nossa Senhora do Loreto","2018-05-21 14:33:14.3","26109220","(81) 997251585","SCHOOL",NULL,101,97,97
+67,True,"Organização Bombeiros Unidos Sem Fronteiras - CPLP - BRASIL","2018-02-07 17:17:23.578",NULL,"(11) 947239000","NGO","http://www.busfbrasil.org.br",70,67,67
+96,True,"Prefeitura Municipal de Jacareí","2018-05-16 11:54:44.072",NULL,"(12) 39559700","OTHER",NULL,100,96,96
+90,True,"Projeto NASFE-Educação","2018-04-17 15:41:35.706",NULL,"(32) 21023475","OTHER",NULL,94,90,90
+102,True,"SECRETARIA DE PROTEÇÃO CIVIL E SEGURANÇA PÚBLICA","2018-06-27 08:32:57.094",NULL,"(47) 34311535","CIVIL_DEFENSE",NULL,106,102,102
+117,True,"E.M ESTINA CAMPI BAPTISTA","2018-07-17 14:41:54.338","35056431","(13) 34965313","SCHOOL",NULL,121,117,117
+119,True,"União São Lázaro Brasil, Cátedra de Proteção e Defesa Civil","2018-08-04 00:22:44.717",NULL,"(47) 988342727","NGO","http://www.stlazarusbrasil.org/",123,119,119
+121,True,"DEFESA CIVIL ESTADUAL DE ALAGOAS","2018-08-15 10:42:38.895",NULL,"(82) 33152843","CIVIL_DEFENSE","http://defesacivil@bombeiros.al.gov.br",125,121,121
+120,True,"EE Dirce Elias","2018-08-07 08:19:34.628","35905124","(12) 39481303","SCHOOL",NULL,124,120,120
+122,True,"Instituto de Ciência e Tecnologia - UNESP, São José dos Campos","2018-08-16 11:59:56.317",NULL,"(12) 39479700","SCHOOL",NULL,126,122,122
+128,True,"EMEF Homera da Silva Braga","2018-08-16 16:08:02.296",NULL,"(12) 39330344","SCHOOL",NULL,132,128,128
+118,True,"Associação Beneficente Amurt-Amurte","2018-07-22 18:59:16.331",NULL,"(12) 38333016","NGO","http://www.projetonamaskar.org/",122,118,118
+126,True,"EMEF Hélio Augusto de Souza","2018-08-16 15:59:20.421",NULL,"(12) 39295996","SCHOOL",NULL,130,126,126
+127,True,"EMEF Hélio Walter Bevilaqua","2018-08-16 16:04:09.35",NULL,"(12) 39392310","SCHOOL",NULL,131,127,127
+123,True,"EMEF Possidônio José de Freitas","2018-08-16 15:24:35.464",NULL,"(12) 39051911","SCHOOL",NULL,127,123,123
+125,True,"EMEF Prof. Leonor Pereira Nunes Galvão","2018-08-16 15:54:38.403",NULL,"(12) 39291714","SCHOOL",NULL,129,125,125
+130,True,"EMEF PROF WALDEMAR RAMOS","2018-08-16 16:19:01.966",NULL,"(12) 39296319","SCHOOL",NULL,134,130,130
+129,True,"EMEF PROFESSORA RUTH NUNES DA TRINDADE","2018-08-16 16:10:51.29",NULL,"(12) 39441030","SCHOOL",NULL,133,129,129
+134,True,"EMEF Profª Ildete Mendonça Barbosa","2018-08-17 10:04:01.084",NULL,"(12) 39661688","SCHOOL",NULL,138,134,134
+132,True,"EMEF Profª Ilga Pusplatis","2018-08-17 09:57:07.118",NULL,"(12) 39023695","SCHOOL",NULL,136,132,132
+133,True,"EMEF Profª Jacyra Baracho","2018-08-17 10:01:10.712",NULL,"(12) 39330650","SCHOOL",NULL,137,133,133
+124,True,"Escola Municipal de Educação Fundamental Geraldo de Almeida","2018-08-16 15:44:42.163",NULL,"(12) 39292545","SCHOOL",NULL,128,124,124
+135,True,"EMEF Profª Lúcia Pereira Rodrigues","2018-08-17 10:08:16.152",NULL,"(12) 39441769","SCHOOL",NULL,139,135,135
+131,True,"Norma De Conti Simão","2018-08-16 16:25:59.822",NULL,"(12) 39372828","SCHOOL",NULL,135,131,131
+136,True,"SUPERINTENDÊNCIA DE DEFESA CIVIL JABOATÃO DOS GUARARAPES","2018-08-23 19:21:33.543",NULL,"(81) 34763981","CIVIL_DEFENSE",NULL,140,136,136
+137,True,"Anvisa","2018-08-24 12:18:09.082",NULL,"(61) 34625974","OTHER","http://portal.anvisa.gov.br/",141,137,137
+138,True,"ESCOLA ESTADUAL PROFESSORA ISABEL CRISTINA FÁVARO PALMA","2018-08-24 15:29:36.589","35906840","(14) 33859000","SCHOOL",NULL,142,138,138
+139,True,"ESCOLA MUNICIPAL ANA FARIAS DE SOUZA","2018-08-28 09:51:03.167",NULL,"(81) 986974837","SCHOOL",NULL,143,139,139
+145,True,"EMEF Mercedes Rachid Edwards","2018-09-10 08:39:46.252",NULL,"(12) 39261634","SCHOOL",NULL,149,145,145
+146,True,"CORDENAÇÃO DE DEFESA CIVIL","2018-09-18 10:33:34.843",NULL,"(71) 36227789","CIVIL_DEFENSE",NULL,150,146,146
+147,True,"EMEB Professor Antonio Joaquim Henriques","2018-09-19 17:54:09.584","4202905","(49) 32243165","SCHOOL",NULL,151,147,147
+154,True,"EMEF Mariana Teixeira Cornélio","2018-09-20 19:57:48.899",NULL,"(12) 39133600","SCHOOL",NULL,158,154,154
+162,True,"COLEGIO ESTADUAL JOÃO DE FARIA PIOLI","2018-09-21 09:50:50.145","41024125","(44) 32686804","SCHOOL",NULL,166,162,162
+156,True,"EMEF Maria Antonieta Ferreira Payar","2018-09-20 20:13:47.605",NULL,"(12) 39122739","SCHOOL",NULL,160,156,156
+163,True,"ESCOLA MUNICIPAL VIDA E ESPERANÇA","2018-09-27 07:28:05.905",NULL,"(66) 984125188","SCHOOL",NULL,167,163,163
+164,True,"E.E. Dr. Eduardo Corrêa da Costa Jr.","2018-09-27 10:14:07.398","011290","(12) 38824056","SCHOOL","http://https://eletivaeucomisso.blogspot.com/",168,164,164
+161,True,"EMEF Profª Rosa Tomita","2018-09-21 08:34:06.424",NULL,"(12) 39292995","SCHOOL",NULL,165,161,161
+166,True,"EMTI Professor Levi Vieira da Maia","2018-10-04 07:57:08.155","35437736","(11) 24847515","SCHOOL",NULL,170,166,166
+167,True,"E.E.E.M.I. PROF ILZA IRMA MOELLER COPPIO","2018-10-04 21:06:31.349","35013523","(12) 39112941","SCHOOL","http://INTEGRALSUSTENTAVEL.BLOGSPOT.COM",171,167,167
+168,True,"Lídia Bononi Paiva Tomaz","2018-10-10 17:54:33.932","1043780","(34) 988011722","SCHOOL","http://www.iftm.edu.br/uraparquetecnologico/",172,168,168
+169,True,"Coordenadoria Municipal de Proteção e Defesa Civil","2018-10-11 09:13:36.829",NULL,"(28) 998844657","CIVIL_DEFENSE",NULL,173,169,169
+170,True,"escola municipal jesus de nazare","2018-10-18 09:37:09.291",NULL,"(81) 991093685","SCHOOL",NULL,174,170,170
+171,True,"escola municipal marechal costa e silva","2018-10-18 10:19:50.648",NULL,"(81) 991093685","SCHOOL",NULL,175,171,171
+172,True,"escola municipal natividade saldanha","2018-10-18 10:30:16.269",NULL,"(81) 991093685","SCHOOL",NULL,176,172,172
+174,True,"escola municipal nossa senhora do loreto","2018-10-19 10:40:44.246",NULL,"(81) 991093685","SCHOOL",NULL,178,174,174
+175,True,"escola municipal santa tereza de avila","2018-10-19 10:48:00.164",NULL,"(81) 991093685","SCHOOL",NULL,179,175,175
+176,True,"escola municipal jose leopoldino","2018-10-19 11:21:33.244",NULL,"(81) 991093685","SCHOOL",NULL,180,176,176
+179,True,"EMEF Alvaro Gonçalves","2018-10-23 15:56:16.758",NULL,"(12) 39662298","SCHOOL",NULL,183,179,179
+188,True,"EMEF Dom Pedro de Alcântara","2018-10-23 17:10:22.92",NULL,"(12) 988107960","SCHOOL",NULL,192,188,188
+173,True,"defesa civil de criciuma","2018-10-19 10:35:54.795",NULL,"(48) 34375342","CIVIL_DEFENSE","http://www.criciuma.sc.gov.br/defesacivil/",177,173,173
+181,True,"EMEF  Mercedes Rachid","2018-10-23 16:24:25.426",NULL,"(12) 988839680","SCHOOL",NULL,185,181,181
+184,True,"EE Monsenhor Ignacio Gioia","2018-10-23 16:44:08.98",NULL,"(12) 36711403","SCHOOL",NULL,188,184,184
+183,True,"EE Prof Geraldo Martins dos Santos","2018-10-23 16:40:26.322",NULL,"(12) 997060027","SCHOOL",NULL,187,183,183
+151,True,"EMEF /maria Ofélia Veneziani Pedrosa","2018-09-20 19:42:09.093",NULL,"(12) 39330408","SCHOOL",NULL,155,151,151
+150,True,"EMEF Luzia Levina Aparecida Borges","2018-09-20 19:28:27.947",NULL,"(12) 39661569","SCHOOL",NULL,154,150,150
+152,True,"EMEF Maria Aparecida dos Santos Ronconi","2018-09-20 19:47:26.906",NULL,"(12) 39114549","SCHOOL",NULL,156,152,152
+153,True,"EMEF Maria de Melo","2018-09-20 19:52:13.331",NULL,"(12) 39313593","SCHOOL",NULL,157,153,153
+155,True,"EMEF Maria Nazareth de M Veronese","2018-09-20 20:04:49.782",NULL,"(12) 39213424","SCHOOL",NULL,159,155,155
+186,True,"EMEF Maria Ofélia V. Pedrosa","2018-10-23 16:55:07.55",NULL,"(12) 981198806","SCHOOL",NULL,190,186,186
+158,True,"EMEF Prof Moacyr Benedicto de Souza","2018-09-21 07:44:13.036",NULL,"(12) 39661829","SCHOOL",NULL,162,158,158
+149,True,"EMEF Profª Maria Amélia Wakamatsu","2018-09-20 19:22:02.028",NULL,"(12) 39297535","SCHOOL",NULL,153,149,149
+178,True,"Escola Estadual Dr. Eduardo Correia da Costa","2018-10-23 15:50:47.041",NULL,"(12) 981728455","SCHOOL",NULL,182,178,178
+157,True,"EMEF Profª Mercedes Carnevalli Klein","2018-09-21 07:37:19.895",NULL,"(12) 39311404","SCHOOL",NULL,161,157,157
+159,True,"EMEF Profª Otacília Madureira de Moura","2018-09-21 07:47:44.23",NULL,"(12) 39215655","SCHOOL",NULL,163,159,159
+160,True,"EMEF Profª Palmyra Sant'Anna","2018-09-21 08:30:01.106",NULL,"(12) 39292089","SCHOOL",NULL,164,160,160
+187,True,"Escola Estadual Profa Edera I.O.P. Oliveira","2018-10-23 17:05:41.137",NULL,"(12) 39441675","SCHOOL",NULL,191,187,187
+177,True,"Escola Estadual Major Juvenal Alvim","2018-10-23 15:27:31.104",NULL,"(11) 44122802","SCHOOL",NULL,181,177,177
+140,True,"Escola Municipal Jesus de Nazaré","2018-08-29 14:27:55.795",NULL,"(81) 988655340","SCHOOL",NULL,144,140,140
+141,True,"Escola Municipal Jesus de Nazaré","2018-08-30 15:01:31.19",NULL,"(81) 999754907","SCHOOL",NULL,145,141,141
+142,True,"Escola Municipal Marechal Costa e Silva","2018-08-30 15:08:47.195",NULL,"(81) 999754907","SCHOOL",NULL,146,142,142
+144,True,"Escola Municipal Santa Tereza de Ávila","2018-08-30 16:00:04.923",NULL,"(81) 999754907","SCHOOL",NULL,148,144,144
+143,True,"ESCOLA MUNICIPAL NATIVIDADE SALDANHA","2018-08-30 15:38:24.772",NULL,"(81) 999754907","SCHOOL",NULL,147,143,143
+185,True,"FATEC Jacareí - Recurso Hídrico","2018-10-23 16:48:54.662",NULL,"(12) 981544254","SCHOOL",NULL,189,185,185
+201,True,"Coordenadoria Municipal de Proteção e Defesa Civil","2019-03-13 09:08:27.377",NULL,"(21) 26492182","CIVIL_DEFENSE",NULL,206,201,201
+189,True,"NUPREC Guarulhos","2018-10-23 17:18:39.648",NULL,"(11) 962824347","CIVIL_DEFENSE","http://www.nuprec.com.br",193,189,189
+180,True,"EMEF Emannuel Antonio dos Santos","2018-10-23 16:20:11.151",NULL,"(12) 39298970","SCHOOL",NULL,184,180,180
+190,True,"Colegio Paulista","2018-10-25 13:32:46.07",NULL,"(91) 998259029","SCHOOL",NULL,194,190,190
+191,True,"Subsecretaria Municipal de Defesa Civil","2018-10-26 11:38:49.622",NULL,"(21) 989092707","CIVIL_DEFENSE",NULL,195,191,191
+192,True,"ESCOLA BOSQUE PROFESSOR EIDORFE MOREIRA","2018-10-26 12:27:56.28","15140759","(91) 30731850","SCHOOL","http://www.belem.pa.gov.br/funbosque/",196,192,192
+193,True,"JP SOLUÇÕES AMBIENTAIS & AGROPECUÁRIAS","2018-10-29 12:11:19.175",NULL,"(33) 999895954","OTHER",NULL,197,193,193
+182,True,"EMEF Profa Aurea Cantinho Rodrigues","2018-10-23 16:30:35.188",NULL,"(12) 33227785","SCHOOL",NULL,186,182,182
+195,True,"Portal Defesa Civil","2018-11-12 07:57:15.061",NULL,"(22) 974055538","NGO","http://portaldefesacivil.com.br",200,195,195
+196,True,"Fundação para a Conservação e Produção Florestal","2018-11-30 10:15:18.429",NULL,"(11) 29975048","OTHER",NULL,201,196,196
+194,True,"Superintendencia de Proteção e Defesa civil","2018-11-09 10:49:38.896",NULL,"(81) 991093685","CIVIL_DEFENSE",NULL,198,194,194
+197,True,"Universidade Federal da Paraíba","2019-01-31 22:29:35.674",NULL,"(83) 87007620","OTHER",NULL,202,197,197
+198,True,"Instituto Geológico","2019-02-11 09:51:54.865",NULL,"(11) 998948126","OTHER",NULL,203,198,198
+202,True,"Prefeitura Municipal de Magé","2019-03-15 09:12:28.919",NULL,"(21) 27394512","CIVIL_DEFENSE","http://Prefeitura Municipal de Magé",207,202,202
+199,True,"Diretoria de Ensino de Taubaté SEE-SP","2019-02-12 14:14:57.141",NULL,"(12) 997422624","OTHER",NULL,204,199,199
+200,True,"Escola Estadual Zulmira de Oliveira","2019-03-13 08:07:04.825","35015544","(15) 35221655","SCHOOL",NULL,205,200,200
+203,True,"E.E. DR. CARLOS LIMA DIAS","2019-03-21 10:34:14.658","35041497","(19) 36564155","SCHOOL",NULL,208,203,203
+204,True,"Escola Estadual Prof.Orlando Perez","2019-03-27 10:51:30.619","35914988","(16) 33753544","SCHOOL",NULL,209,204,204
+205,True,"Coordenadoria de Proteção e Defesa Civil Municipal","2019-04-25 14:18:06.811",NULL,"(48) 991434687","CIVIL_DEFENSE",NULL,210,205,205
+206,True,"UFRJ - Universidade Federal do Rio de Janeiro","2019-04-29 11:36:37.315",NULL,"(21) 39387439","OTHER","http://www.poli.ufrj.br",211,206,206
+207,True,"EMEIF JOÃO GONÇALVES DOS SANTOS","2019-05-24 19:34:03.915",NULL,"(12) 991331291","SCHOOL",NULL,212,207,207
+209,True,"Wilson Roberto Simionato","2019-06-27 11:20:44.447",NULL,"(11) 995276673","OTHER",NULL,214,209,209
+210,True,"DEFESA CIVIL   DO MUNICÍPIO DE PINHEIRAL","2019-08-26 11:18:54.609",NULL,"(24) 33563158","CIVIL_DEFENSE",NULL,216,210,210
+211,True,"Centro Educacional Renascer - Cônego Paulo Dilacio","2019-09-06 15:05:53.754","31368292","(31) 35538313","SCHOOL",NULL,217,211,211
+212,True,"ESCOLA ESTADUAL PROFESSOR JORGE KARAM NETO","2019-09-16 20:17:35.494","13074369","(92) 992819566","SCHOOL",NULL,218,212,212
+213,True,"Coordenadoria Municipal de Proteção e Defesa Civil de Criciúma","2020-02-05 16:18:27.991",NULL,"(48) 34458880","CIVIL_DEFENSE","http://www.criciuma.sc.gov.br/defesacivil/",219,213,213
+214,True,"Coordenadoria Municipal de Proteção e Defesa Civil - COMPDEC","2020-02-12 13:36:01.118",NULL,"(88) 999360667","CIVIL_DEFENSE",NULL,220,214,214
+148,True,"Coordenadoria Municipal de Proteção e Defesa Civil da Estância Turística de Ribeirão Pires","2018-09-20 10:47:43.696",NULL,"(11) 48251830","CIVIL_DEFENSE",NULL,152,148,148
+208,True,"MARIA LUIZA DE SOUZA PINTO VASQUES PROFA EMEF","2019-06-27 11:08:27.776",NULL,"(12) 39581527","SCHOOL",NULL,213,208,208
+215,True,"Instituto Federal do Espírito Santo - Campus Ibatiba","2020-02-20 09:56:59.491","32078501","(28) 35435500","SCHOOL","http://ibatiba.ifes.edu.br/",221,215,215
+216,True,"Instituto Brasileiro de Pacificadores","2020-03-16 19:22:55.844",NULL,"(75) 998127089","NGO",NULL,222,216,216
+217,True,"Governo do Estado de São Paulo","2020-05-05 16:35:56.236",NULL,"(18) 998169984","SCHOOL",NULL,223,217,217
+218,True,"EE de tempo integral Professora Ivone dos Anjos da Silva Santos","2020-05-05 17:10:46.99","269396","(11) 996150878","SCHOOL",NULL,224,218,218
+219,True,"Rituco Mitani","2020-05-21 12:14:53.356","35005691","(11) 999915493","SCHOOL","http://RITUCO MITANI Profª",225,219,219
+165,True,"NEPEDEC Núcleo de Ensino e Pesquisa em Defesa Civil","2018-10-03 16:12:14.293",NULL,"(21) 972229976","OTHER","http://www.nepedec.com.br",169,165,165
+220,True,"Universidade Federal do Paraná","2020-06-03 18:32:18.868",NULL,"(41) 984282902","OTHER",NULL,226,220,220
+221,True,"Instituto Federal de Alagoas","2020-07-16 21:54:47.069",NULL,"(82) 996201929","SCHOOL",NULL,227,221,221
+222,True,"EE Professor Rubens Zamith","2020-07-21 10:28:30.936","35901520","(12) 982824510","SCHOOL","http://https://sites.google.com/view/rubens-zamith/in%C3%ADcio?authuser=2",228,222,222
+223,False,"ULBRA","2020-08-06 11:01:22.655",NULL,"(51) 33316625","OTHER",NULL,229,223,223
+224,True,"Universidade Federal do Maranhão","2020-09-29 22:08:37.063",NULL,"(98) 987433844","OTHER",NULL,230,224,224
+225,True,"DEFESA CIVIL DE PALHOÇA","2020-10-09 16:59:06.989",NULL,"(48) 32200300","CIVIL_DEFENSE",NULL,231,225,225
+226,False,"E. E. Profª Semíramis Prado de Oliveira","2020-10-23 00:46:55.749","35011186","(12) 38421282","SCHOOL","http://https://www.facebook.com/Escola-Estadual-Prof%C2%AA-Sem%C3%ADramis-Prado-de-Oliveira-609971869353299",232,226,226
+227,True,"Instituto Federal do Paraná (Campus Curitiba)","2020-11-05 17:21:28.777","41133757","(41) 35351672","SCHOOL","http://https://curitiba.ifpr.edu.br/",233,227,227
+228,False,"E.E. MAURICIO MILANI","2021-02-25 10:34:20.135","35047703","(18) 33561281","SCHOOL","http://https://sites.google.com/prof.educacao.sp.gov.br/eemauriciomilani/in%C3%ADcio",234,228,228
+229,True,"CORPO DE BOMBEIRO CIVIL NO MUNICIPIO DE MARICÁ","2021-03-16 10:47:15.315",NULL,"(21) 974357424","NGO","http://https://sites.google.com/d/1LXFEKyQ_pb1vgudXrjlzDFuZDME84TWr/p/1v_ymeuDDmFeDwaM3Xz-pDxPJxn9nAnYT/edit",235,229,229
+230,False,"Marcia Cristina Muniz Guimarães Romito","2021-04-05 18:57:05.728",NULL,"(22) 999745999","NGO",NULL,236,230,230
+231,False,"SUPERINTENDENCIA DA DEFESA CIVIL","2021-04-18 10:28:59.43",NULL,"(71) 987358725","CIVIL_DEFENSE","http://https://www.laurodefreitas.ba.gov.br/2019/",237,231,231
+232,True,"COORDENADORIA MUNICICIPAL DE PROTEÇÃO DEFESA CIVIL MAR DE ESPANHA","2021-05-13 09:12:20.35",NULL,"(32) 32761225","CIVIL_DEFENSE",NULL,238,232,232
+233,True,"Defesa Civil de Pirassununga","2021-06-17 17:59:38.024",NULL,"(19) 35652851","CIVIL_DEFENSE","http://pirassununga.sp.gov.br",239,233,233
+234,False,"nasdaki","2021-07-06 19:23:40.192",NULL,"(55) 119486768","OTHER","http://nasdaki.com.br",240,234,234
+235,True,"Rubens Corrêa","2021-07-08 13:00:54.868",NULL,"(11) 943188209","CIVIL_DEFENSE",NULL,241,235,235
+236,True,"Defesa Civil de Santa Catarina","2021-07-12 17:02:50.287",NULL,"(48) 998300707","CIVIL_DEFENSE",NULL,242,236,236

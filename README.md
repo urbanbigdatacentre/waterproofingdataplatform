@@ -45,16 +45,23 @@ To deploy this component, you need to install `sphinx` compiler and the document
 
 Access ---> [WPD-MoobileApp](WPD-MobileApp)
 
-This is the module for the mobile application [Water]. This application allows citizens to register self-made rainfall gauges, collect their rainfall measures and report rain and flood events.
+This is the module for the mobile application [Waterproofing Data](https://play.google.com/store/apps/details?id=com.dadosaprovadagua.wpdmobileapp). This application allows citizens to register self-made rainfall gauges, collect their rainfall measures and report rain and flood events.
 The module contains the components developed for a mobile app using [React Native](https://reactnative.dev/) and [Expo](https://docs.expo.io/). For running unit tests, you can use [Jest](https://docs.expo.io/guides/testing-with-jest).
 
 ## 3. WPD Query API Server
 
-Access ---> [WPD-MoobileApp](WPD-MobileApp)
+Access ---> [WPD-WebServer](WPD-WebServer)
 
-This is the module for the mobile application [Water]. This application allows citizens to register self-made rainfall gauges, collect their rainfall measures and report rain and flood events.
-The module contains the components developed for a mobile app using [React Native](https://reactnative.dev/) and [Expo](https://docs.expo.io/). For running unit tests, you can use [Jest](https://docs.expo.io/guides/testing-with-jest).
+This is the module for the Query API that enables communication between the [Mobile App](https://play.google.com/store/apps/details?id=com.dadosaprovadagua.wpdmobileapp) and
+the [Dashboard]() interfaces, and the backend components. This module uses a [NodeJS]() web server to expose a Query API to hadle client requests. 
+This API enables access to a metadata-oriented database that summaries the multiple data sources feeding the platform. 
+Details of the database model can be seen in the [Database Model](WPD-MobileApp/db/wpd.erd.pdf).
 
+## 4. WPD Authentication Module
+
+Access ---> [WPD-Auth](WPD-WebServer)
+
+This is the module for the 
 
 ## Further help
 For any bugs, queries or feature improvements contact <diego.pajaritograjales@glasgow.ac.uk>.

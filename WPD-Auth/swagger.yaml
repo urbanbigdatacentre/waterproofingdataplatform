@@ -1,0 +1,752 @@
+swagger: '2.0'
+info:
+  description: 'This is a sample JWT authentication service. You can find out more about JWT at [https://jwt.io/](https://jwt.io/). For this sample, you can use the `admin` or `client` users (password: admin and client respectively) to test the authorization filters. Once you have successfully logged in and obtained the token, you should click on the right top button `Authorize` and introduce it with the prefix "Bearer ".'
+  version: 1.0.4
+  title: The authenticator for the Waterproofing Data (WPD) Work Packages
+  contact:
+    email: igsd@warwick.ac.uk
+  license:
+    name: Apache-2.0 License
+    url: https://opensource.org/licenses/Apache-2.0
+host: localhost:8080
+basePath: /
+tags:
+  - name: forgotpasswords
+    description: Forgot Passwords Controller
+  - name: users
+    description: Operations about users
+paths:
+  /forgotpasswords/findallforgotpasswordquestions:
+    get:
+      tags:
+        - forgotpasswords
+      summary: ${ForgotPasswordsController.findallforgotpasswordquestions}
+      operationId: findallforgotpasswordquestionsUsingGET
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ForgotPasswordsQuestionsResponseDTO'
+        '400':
+          description: Something went wrong
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /forgotpasswords/loginbyusernameandanswers:
+    post:
+      tags:
+        - forgotpasswords
+      summary: ${ForgotPasswordsController.loginbyusernameandanswers}
+      operationId: loginbyusernameandanswersUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - in: body
+          name: answers
+          description: Answers
+          required: false
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ForgotPasswordsQuestionsUsersAnswersRequestDTO'
+        - name: username
+          in: query
+          description: Username
+          required: false
+          type: string
+          allowEmptyValue: false
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '400':
+          description: Something went wrong
+        '404':
+          description: The user or answer don't exist
+        '422':
+          description: Invalid answers supplied to login. Must have at least 2 correct ones.
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /forgotpasswords/loginbyusernameandkey:
+    post:
+      tags:
+        - forgotpasswords
+      summary: ${ForgotPasswordsController.loginbyusernameandkey}
+      operationId: loginbyusernameandkeyUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: key
+          in: query
+          description: Key
+          required: false
+          type: string
+          allowEmptyValue: false
+        - name: username
+          in: query
+          description: Username
+          required: false
+          type: string
+          allowEmptyValue: false
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '400':
+          description: Something went wrong
+        '422':
+          description: Invalid username/password supplied
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /forgotpasswords/passwordupdatebyusername:
+    post:
+      tags:
+        - forgotpasswords
+      summary: ${ForgotPasswordsController.passwordupdatebyusername}
+      operationId: passwordupdatebyusernameUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: newPassword
+          in: query
+          description: NewPassword
+          required: false
+          type: string
+          allowEmptyValue: false
+        - name: username
+          in: query
+          description: Username
+          required: false
+          type: string
+          allowEmptyValue: false
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Something went wrong
+        '403':
+          description: Access denied
+        '404':
+          description: The user doesn't exist
+        '500':
+          description: Expired or invalid JWT token
+      security:
+        - Authorization:
+            - global
+        - apiKey: []
+      deprecated: false
+  /forgotpasswords/saveforgotpasswordquestionsusersanswers:
+    post:
+      tags:
+        - forgotpasswords
+      summary: ${ForgotPasswordsController.saveforgotpasswordquestionsusersanswers}
+      operationId: saveforgotpasswordquestionsusersanswersUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - in: body
+          name: answer
+          description: Forgot Password Questions Users Answers
+          required: false
+          schema:
+            $ref: '#/definitions/ForgotPasswordsQuestionsUsersAnswersRequestDTO'
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Something went wrong
+        '403':
+          description: Access denied
+        '404':
+          description: The user or forgot password questions don't exist
+        '500':
+          description: Expired or invalid JWT token
+      security:
+        - Authorization:
+            - global
+        - apiKey: []
+      deprecated: false
+  /forgotpasswords/sendkeybyemail:
+    post:
+      tags:
+        - forgotpasswords
+      summary: ${ForgotPasswordsController.sendkeybyemail}
+      operationId: sendkeybyemailUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: email
+          in: query
+          description: Email
+          required: false
+          type: string
+          allowEmptyValue: false
+        - name: username
+          in: query
+          description: Username
+          required: false
+          type: string
+          allowEmptyValue: false
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Something went wrong
+        '422':
+          description: Invalid email supplied
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /users/activate:
+    post:
+      tags:
+        - users
+      summary: ${UserController.activate}
+      description: This is the user activation method.
+      operationId: activateUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: activationkey
+          in: query
+          description: Activation Key to activate the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: If user belongs to 'ROLE_INSTITUTION' the key should be collected from the EduCemadenOrganization registration. If the user belongs to 'ROLE_CLIENT' the key should be provided by a 'ROLE_INSTITUTION' valid user.
+        - name: username
+          in: query
+          description: username of the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: This is an unique field, and consumers should be aware of it. By convention, WP6 should send the user phone number (i.e. (99)99999-9999).
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '400':
+          description: Something went wrong
+        '403':
+          description: Access denied
+        '422':
+          description: User or ActivationKey registration issues
+        '500':
+          description: Expired or invalid JWT token
+      security:
+        - Authorization:
+            - global
+        - apiKey: []
+      deprecated: false
+  /users/existsByNickname:
+    post:
+      tags:
+        - users
+      summary: ${UserController.existsByNickname}
+      description: From a nickname, this method returns if there is a nickname in db or not.
+      operationId: existsByNicknameUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: nickname
+          in: query
+          description: nickname of the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: This is an unique field, and consumers should be aware of it.
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: boolean
+        '400':
+          description: Something went wrong
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /users/existsByUsername:
+    post:
+      tags:
+        - users
+      summary: ${UserController.existsByUsername}
+      description: From a username, this method returns if there is a username in db or not.
+      operationId: existsByUsernameUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: username
+          in: query
+          description: username of the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: This is an unique field, and consumers should be aware of it. By convention, WP6 should send the user phone number (i.e. (99)99999-9999).
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: boolean
+        '400':
+          description: Something went wrong
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /users/login:
+    post:
+      tags:
+        - users
+      summary: ${UserController.login}
+      description: From a valid username and password, this method returns the JWT Token to be used in secure methods.
+      operationId: loginUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - name: password
+          in: query
+          description: password of the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: i.e. P@s5w0rD
+        - name: username
+          in: query
+          description: username of the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: This is an unique field, and consumers should be aware of it. By convention, WP6 should send the user phone number (i.e. (99)99999-9999).
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '400':
+          description: Something went wrong
+        '404':
+          description: Invalid username/password supplied
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /users/me:
+    get:
+      tags:
+        - users
+      summary: ${UserController.me}
+      description: This is the user search method by token.
+      operationId: whoamiUsingGET
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/UsersResponseDTO'
+        '400':
+          description: Something went wrong
+        '403':
+          description: Access denied
+        '500':
+          description: Expired or invalid JWT token
+      security:
+        - Authorization:
+            - global
+        - apiKey: []
+      deprecated: false
+  /users/refresh:
+    get:
+      tags:
+        - users
+      summary: refresh
+      operationId: refreshUsingGET
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /users/signup:
+    post:
+      tags:
+        - users
+      summary: ${UserController.signup}
+      description: This the signup method to create new users. By defaul all users are created as inactive. To activate, the method ${UserController.activate} should be invoked.
+      operationId: signupUsingPOST
+      consumes:
+        - application/json
+      produces:
+        - '*/*'
+      parameters:
+        - in: body
+          name: user
+          description: Signup User
+          required: true
+          schema:
+            $ref: '#/definitions/UsersRequestDTO'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '400':
+          description: Something went wrong
+        '422':
+          description: Required parameters should be provided
+      security:
+        - Authorization:
+            - global
+      deprecated: false
+  /users/{id}:
+    get:
+      tags:
+        - users
+      summary: ${UserController.findById}
+      description: This is the user findById search method.
+      operationId: findByIdUsingGET
+      produces:
+        - '*/*'
+      parameters:
+        - name: id
+          in: query
+          description: user id
+          required: true
+          type: integer
+          format: int32
+          allowEmptyValue: false
+          x-example: A positive numeric id.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/UsersResponseDTO'
+        '403':
+          description: Access denied
+        '404':
+          description: The user doesn't exist
+        '500':
+          description: Expired or invalid JWT token
+      security:
+        - Authorization:
+            - global
+        - apiKey: []
+      deprecated: false
+  /users/{username}:
+    get:
+      tags:
+        - users
+      summary: ${UserController.search}
+      description: This is the user search method by username.
+      operationId: searchUsingGET
+      produces:
+        - '*/*'
+      parameters:
+        - name: username
+          in: query
+          description: username of the user
+          required: true
+          type: string
+          allowEmptyValue: false
+          x-example: This is an unique field, and consumers should be aware of it. By convention, WP6 should send the user phone number (i.e. (99)99999-9999).
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/UsersResponseDTO'
+        '403':
+          description: Access denied
+        '404':
+          description: The user doesn't exist
+        '500':
+          description: Expired or invalid JWT token
+      security:
+        - Authorization:
+            - global
+        - apiKey: []
+      deprecated: false
+securityDefinitions:
+  Authorization:
+    type: apiKey
+    name: Authorization
+    in: header
+definitions:
+  EduCemadenOrganizations:
+    type: object
+    properties:
+      activationkey:
+        type: string
+        format: uuid
+      active:
+        type: string
+      address:
+        type: string
+      creation_date:
+        type: string
+      id:
+        type: integer
+        format: int32
+      inep_code:
+        type: string
+      login:
+        type: string
+      name:
+        type: string
+      phone:
+        type: string
+      responsible:
+        type: string
+      type:
+        type: string
+      website:
+        type: string
+    title: EduCemadenOrganizations
+  ForgotPasswordsQuestionsResponseDTO:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      question:
+        type: string
+      active:
+        type: integer
+        format: int32
+    title: ForgotPasswordsQuestionsResponseDTO
+  ForgotPasswordsQuestionsUsersAnswersRequestDTO:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      forgotpasswordquestionsid:
+        type: integer
+        format: int32
+      usersid:
+        type: integer
+        format: int32
+      answer:
+        type: string
+    title: ForgotPasswordsQuestionsUsersAnswersRequestDTO
+  UsersProviderActivationKey:
+    type: object
+    properties:
+      activationkey:
+        type: string
+        format: uuid
+      id:
+        type: integer
+        format: int32
+      usersid:
+        type: integer
+        format: int32
+    title: UsersProviderActivationKey
+  UsersRequestDTO:
+    type: object
+    required:
+      - city
+      - nickname
+      - password
+      - roles
+      - state
+      - termsofusage
+      - username
+    properties:
+      username:
+        type: string
+        example: This is an unique field, and consumers should be aware of it. By convention, WP6 should send the user phone number (i.e. (99)99999-9999).
+        description: username of the user.
+      nickname:
+        type: string
+        example: i.e. beth2021. This is an unique field, and consumers should be aware of it.
+        description: nickname of the user.
+      password:
+        type: string
+        example: i.e. P@s5w0rD.
+        description: password of the user.
+      dateofborn:
+        type: string
+        format: date
+        example: i.e. 01/12/1978. Format should be dd/MM/yyyy.
+        description: Date of Born of the user.
+      gender:
+        type: string
+        example: i.e. M. 'M' stands for Male, 'F' Female, 'N' Not Informed
+        description: Gender of the user.
+        enum:
+          - '{@code M'
+          - F
+          - N}
+      state:
+        type: string
+        example: i.e. SP. State should be 2 characteres (UF)
+        description: state of the user.
+      city:
+        type: string
+        example: i.e. 'Governador Valadares'.
+        description: city of the user.
+      institutiontype:
+        type: string
+        example: i.e. 'E'. E stands for 'School', D 'Civil Defense', N 'No governamental', O 'others'
+        description: institution type of the user.
+        enum:
+          - '{@code E'
+          - D
+          - 'N'
+          - O}
+      institution:
+        type: string
+        example: i.e. 'Colegio Imaginario'.
+        description: institution of the user.
+      securityquestion:
+        type: string
+        example: i.e. 'What is my favorite color?'.
+        description: security question of the user.
+      securityanswer:
+        type: string
+        example: i.e. 'Blue'.
+        description: security answer of the user.
+      termsofusage:
+        type: boolean
+        example: false
+        description: terms of usage of the user.
+      roles:
+        type: array
+        example: i.e. [ROLE_CLIENT].
+        description: roles of the user.
+        items:
+          type: string
+          enum:
+            - ROLE_ADMIN
+            - ROLE_INSTITUTION
+            - ROLE_CLIENT
+    title: UsersRequestDTO
+  UsersResponseDTO:
+    type: object
+    required:
+      - active
+      - city
+      - id
+      - nickname
+      - state
+      - termsofusage
+      - username
+    properties:
+      id:
+        type: integer
+        format: int32
+        example: This is a SERIAL and Primary Key field.
+        description: id of the user.
+      username:
+        type: string
+        example: This is an unique field, and consumers should be aware of it. By convention, WP6 should send the user phone number (i.e. (99)99999-9999).
+        description: username of the user.
+      nickname:
+        type: string
+        example: i.e. beth2021. This is an unique field, and consumers should be aware of it.
+        description: nickname of the user.
+      dateofborn:
+        type: string
+        format: date
+        example: i.e. 01/12/1978. Format should be dd/MM/yyyy.
+        description: Date of Born of the user.
+      gender:
+        type: string
+        example: i.e. M. 'M' stands for Male, 'F' Female, 'N' Not Informed
+        description: Gender of the user.
+        enum:
+          - '{@code M'
+          - F
+          - N}
+      state:
+        type: string
+        example: i.e. SP. State should be 2 characteres (UF)
+        description: state of the user.
+      city:
+        type: string
+        example: i.e. 'Governador Valadares'.
+        description: city of the user.
+      institutiontype:
+        type: string
+        example: i.e. 'E'. E stands for 'School', D 'Civil Defense', N 'No governamental', O 'others'
+        description: institution type of the user.
+        enum:
+          - '{@code E'
+          - D
+          - 'N'
+          - O}
+      institution:
+        type: string
+        example: i.e. 'Colegio Imaginario'.
+        description: institution of the user.
+      securityquestion:
+        type: string
+        example: i.e. 'What is my favorite color?'.
+        description: security question of the user.
+      securityanswer:
+        type: string
+        example: i.e. 'Blue'.
+        description: security answer of the user.
+      termsofusage:
+        type: boolean
+        example: false
+        description: terms of usage of the user.
+      active:
+        type: integer
+        format: int32
+        example: i.e. true.
+        description: whether user is active or not.
+      roles:
+        type: array
+        example: i.e. ['ROLE_ADMIN'] means system administrator, ['ROLE_INSTITUTION'] means institution administrator, ['ROLE_CLIENT'] means regular users
+        description: list of institution type of the user.
+        items:
+          type: string
+          enum:
+            - '{@code ROLE_ADMIN'
+            - ROLE_INSTITUTION
+            - ROLE_CLIENT}
+      eduCemadenOrganization:
+        description: which Educational Cemaden Organization the user belongs.
+        $ref: '#/definitions/EduCemadenOrganizations'
+      providerActivationKey:
+        description: If this user can provide an activation key for other users ('ROLE_INSTITUTION'), this field will store the values.
+        $ref: '#/definitions/UsersProviderActivationKey'
+    title: UsersResponseDTO
