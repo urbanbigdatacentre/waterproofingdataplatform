@@ -1,0 +1,21 @@
+{
+    "responseData": {
+        "array_to_json": [
+            {
+                "formcode": "PLUVIOMETER_REGISTRATION",
+                "formsanswersuserinformer": "admin@wpd.com",
+                "fields": [
+                    {
+                        "fieldsanswerslatitude": 4.750550953715424,
+                        "fieldsanswerslongitude": -74.1179903701844,
+                        "fieldsanswerseventaddress": "Rua dos bobos, 81",
+                        "fieldsanswerseventdate": "11-08-2021",
+                        "fieldsanswerseventtime": "21:52",
+                        "fieldsanswersinstitutename": "E. E. Vagner",
+                        "fieldsanswerrinstitutetype": "Escola"
+                    }
+                ]
+            }
+        ]
+    }
+}

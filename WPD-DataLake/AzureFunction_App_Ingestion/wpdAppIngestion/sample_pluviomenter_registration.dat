@@ -1,0 +1,22 @@
+{ 
+    "responseData": 
+        { 
+            "array_to_json": [ 
+                { 
+                    "formcode": "PLUVIOMETER_REGISTRATION", 
+                    "formsanswersuserinformer": "admin", 
+                    "fieldsanswerslongitude": -55.3683247,
+                    "fieldsanswerslatitude": -11.820377, 
+                    "fields": [ 
+                        {
+                            "fieldsanswerseventaddress": "Rua do teste finale, 00", 
+                            "fieldsanswerseventdate": "09-12-2021", 
+                            "fieldsanswerseventtime": "09:09",
+                            "fieldsanswersinstitutename": "None", 
+                            "fieldsanswersinstitutetype": "None" 
+                        } 
+                    ] 
+                } 
+            ] 
+        } 
+    }

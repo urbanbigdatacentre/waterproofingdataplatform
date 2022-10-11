@@ -1,0 +1,44 @@
+{
+    "scriptFile": "__init__.py",
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": [
+          "get",
+          "post"
+        ]
+      },
+      {
+        "name": "outputblob",
+        "type": "blob",
+        "dataType": "binary",
+        "path": "wpd/landing/mobileApp/ingested_{DateTime}.json",
+        "connection": "AzureWebJobsStorage",
+        "direction": "out"
+      },
+      {
+        "name": "outputmalformed",
+        "type": "blob",
+        "dataType": "binary",
+        "path": "wpd/landing/mobileApp/error/malformed_{DateTime}.json",
+        "connection": "AzureWebJobsStorage",
+        "direction": "out"
+      },
+      {
+        "type": "queue",
+        "direction": "out",
+        "name": "msg",
+        "queueName": "wpdingestion",
+        "connection": "AzureWebJobsStorage"
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "$return"
+      }
+    ]
+  }
+  

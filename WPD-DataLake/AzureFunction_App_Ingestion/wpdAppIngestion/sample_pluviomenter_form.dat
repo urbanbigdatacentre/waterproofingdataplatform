@@ -1,0 +1,23 @@
+{ 
+    "responseData": 
+        { 
+            "array_to_json": [ 
+                { 
+                    "formcode": "PLUVIOMETER_FORM", 
+                    "formsanswersuserinformer": "admin", 
+                    "fieldsanswerslongitude": -55.3683247,
+                    "fieldsanswerslatitude": -11.820377, 
+                    "fields": [ 
+                        { 
+                            "fieldsanswerssituation": "intransitavel",
+                            "fieldsanswerseventdate": "09-12-2021", 
+                            "fieldsanswerseventtime": "23:23", 
+                            "fieldsanswersrainamount": "23.23", 
+                            "fielsanswercomments": "no comment", 
+                            "fieldsanswerimages": "" 
+                        } 
+                    ] 
+                } 
+            ] 
+        } 
+    }
