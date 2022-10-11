@@ -80,5 +80,23 @@ The components rely on an Azure [Data Lake Storage Gen2](https://learn.microsoft
 To further develop this module you should follow instructions on developing [Azure Function for Python](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) and [Azure Functions Core Tools V3](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cmacos%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools)
 
 
+## 6. WPD Web interface (Depreated)
+
+Access ---> [WPD-DataLake](WPD-WebClient)
+
+This is the module that looked for an integrated interface for visualising the data produced by citizens and the official records. 
+The module implements a geospatial data viewer based on [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+The lessons learned during the development of this module became valuable inputs for the development of the project's Dashboard.
+
+
+## Getting the project
+
+Clone the repository locally:
+
+the components that handle data ingestion and pre-processing for the [Waterproofing Data project](https://www.ubdc.ac.uk/research/research-projects/urban-sustainability-participation/waterproofing-data/).
+The components rely on an Azure [Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) subscription and a series of [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) written in Python.
+To further develop this module you should follow instructions on developing [Azure Function for Python](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) and [Azure Functions Core Tools V3](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cmacos%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools)
+
+
 ## Further help
 For any bugs, queries or feature improvements contact <diego.pajaritograjales@glasgow.ac.uk>.

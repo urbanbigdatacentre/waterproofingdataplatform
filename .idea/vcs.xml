@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/WPD-DataLake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WPD-WebClient" vcs="Git" />
   </component>
 </project>
