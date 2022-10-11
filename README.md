@@ -9,7 +9,11 @@ The project has been conducted by a highly skilled international team of researc
 Germany and the UK, in close partnership with researchers, stakeholders and the public of a multi-site case study on 
 flood risk management in Brazil. Furthermore, the methods and results of this case study will be the basis for a 
 transcultural dialogue with government organisations and local administration involved in flood risk management in 
-Germany and the United Kingdom.
+Germany and the United Kingdom. 
+
+`For More information about the Waterproofing Data Project visit:` 
+
+[Urban Big Data Centre, University of Glasgow](https://www.ubdc.ac.uk/research/research-projects/urban-sustainability-participation/waterproofing-data)
 
 
 ## About this repo
@@ -53,15 +57,25 @@ The module contains the components developed for a mobile app using [React Nativ
 Access ---> [WPD-WebServer](WPD-WebServer)
 
 This is the module for the Query API that enables communication between the [Mobile App](https://play.google.com/store/apps/details?id=com.dadosaprovadagua.wpdmobileapp) and
-the [Dashboard]() interfaces, and the backend components. This module uses a [NodeJS]() web server to expose a Query API to hadle client requests. 
+the [Dashboard](https://waterproofing-data.ubdc.ac.uk) interfaces, and the backend components. This module uses a [NodeJS]() web server to expose a Query API to hadle client requests. 
 This API enables access to a metadata-oriented database that summaries the multiple data sources feeding the platform. 
 Details of the database model can be seen in the [Database Model](WPD-MobileApp/db/wpd.erd.pdf).
 
 ## 4. WPD Authentication Module
 
-Access ---> [WPD-Auth](WPD-WebServer)
+Access ---> [WPD-Auth](WPD-Auth)
 
-This is the module for the 
+This is the module that handles user's authentication for the Waterproofing Data (WPD) [Mobile App](https://play.google.com/store/apps/details?id=com.dadosaprovadagua.wpdmobileapp).
+It includes a complete [Swagger documentation](https://urbanbigdatacentre.github.io/WPD-Auth/).
+The module has dependencies from [Maven Project](https://maven.apache.org/), [Java 16](http://openjdk.java.net/projects/jdk/16/),
+[Spring Boot 2.5.3](https://spring.io/projects/spring-boot/), [PostgreSQL](https://www.postgresql.org/) 
+([Homebrew preferably](https://formulae.brew.sh/formula/postgresql))
+
+## 5. WPD Authentication Module
+
+Access ---> [WPD-DataLake(WPD-Auth)
+
+This is the module
 
 ## Further help
 For any bugs, queries or feature improvements contact <diego.pajaritograjales@glasgow.ac.uk>.
