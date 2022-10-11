@@ -71,11 +71,14 @@ The module has dependencies from [Maven Project](https://maven.apache.org/), [Ja
 [Spring Boot 2.5.3](https://spring.io/projects/spring-boot/), [PostgreSQL](https://www.postgresql.org/) 
 ([Homebrew preferably](https://formulae.brew.sh/formula/postgresql))
 
-## 5. WPD Authentication Module
+## 5. WPD Data Lake
 
-Access ---> [WPD-DataLake(WPD-Auth)
+Access ---> [WPD-DataLake](WPD-DataLake)
 
-This is the module
+This is the module contains the components that handle data ingestion and pre-processing for the [Waterproofing Data project](https://www.ubdc.ac.uk/research/research-projects/urban-sustainability-participation/waterproofing-data/).
+The components rely on an Azure [Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction) subscription and a series of [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) written in Python.
+To further develop this module you should follow instructions on developing [Azure Function for Python](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) and [Azure Functions Core Tools V3](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cmacos%2Ccsharp%2Cportal%2Cbash#install-the-azure-functions-core-tools)
+
 
 ## Further help
 For any bugs, queries or feature improvements contact <diego.pajaritograjales@glasgow.ac.uk>.
