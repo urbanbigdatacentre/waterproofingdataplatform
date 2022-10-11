@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="card bg-light">
+    <div class="row">
+      <div class="col-5 d-none d-sm-block" style="width: 50%;">
+        <article class="card-body mx-auto align-bottom" style="margin-top: 35%; max-width: 500px;">
+          <h4 class="mt-6 pt-6">{{ 'USER.SIGNUP.WHY_REGISTER' | translate }}</h4>
+          <ul>
+            <li>{{ 'USER.SIGNUP.POINT_1' | translate }}</li>
+            <li>{{ 'USER.SIGNUP.POINT_2' | translate }}</li>
+          </ul>
+        </article>
+      </div>
+      <div class="col-1 d-none d-sm-block">
+        <hr class="verticalHr">
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-outline-dark float-right" (click)="close()" title="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <article class="card-body mx-auto" >
+          <h4 class="card-title mt-3 text-center">{{ 'USER.SIGNUP.HEADER' | translate }}</h4>
+          <p class="text-center">{{ 'USER.SIGNUP.TITLE' | translate }}</p>
+          <!-- 
+          <p>
+            <a href="" class="btn btn-block btn-primary"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+            <a href="" class="btn btn-block btn-primary"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+          </p> 
+          <p class="divider-text">
+              <span class="bg-light">OR</span>
+          </p>
+          -->
+          <form [formGroup]="formData" novalidate>
+            <!-- <div class="form-group input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+             </div>
+              <label for="name">Full name</label>
+              <input id="name" name="" class="form-control" placeholder="Full name" type="text">
+            </div> form-group// -->
+            <div class="form-group">
+              <label for="name">{{ 'USER.SIGNUP.NAME' | translate }}</label>
+              <input type="text" class="form-control" formControlName="formName"  placeholder="John Doe"
+                [ngClass]="{'is-invalid': formName.errors && (formName.touched || formName.dirty), 'is-valid':formName.valid}">
+            </div>
+            <!-- <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" [(ngModel)]="user.email" name="email" placeholder="email@example.com">
+            </div> -->
+            <div class="form-group">
+              <label for="formPhone">{{ 'USER.SIGNUP.PHONE' | translate }}</label>
+              <input type="text" class="form-control" formControlName="formPhone" placeholder="12345678910"
+                [ngClass]="{'is-invalid': formPhone.errors && (formPhone.touched || formPhone.dirty), 'is-valid':formPhone.valid}">
+              <small id="telHelper" class="form-text text-muted">{{ 'USER.SIGNUP.PHONE_HELPER' | translate }}</small>
+              <div class="mt-4" *ngIf="formPhone.errors?.phoneExist">
+                <span class="alert alert-danger align-middle">
+                  {{ 'USER.SIGNUP.PHONE_EXIST' | translate }}
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">{{ 'USER.SIGNUP.PASSWORD' | translate }}</label>
+              <input type="password" class="form-control" formControlName="formPassword" 
+                placeholder="{{ 'USER.SIGNUP.PASSWORD' | translate }}"
+                [ngClass]="{'is-invalid': formPassword.errors && (formPassword.touched || formPassword.dirty), 'is-valid':formPassword.valid}">
+              <small id="passwordHelper" class="form-text text-muted">{{ 'USER.SIGNUP.PASSWORD_HELPER' | translate }}</small>
+            </div>
+            <div class="form-group">
+              <label for="name">{{ 'USER.SIGNUP.CONFIRM_PASSWORD' | translate }}</label>
+              <input type="password" class="form-control" formControlName="formConfirmPassword"
+                placeholder="{{ 'USER.SIGNUP.CONFIRM_PASSWORD_PLACEHOLDER' | translate }}"
+                [ngClass]="{'is-invalid': formConfirmPassword.errors && (formConfirmPassword.touched || formConfirmPassword.dirty), 'is-valid':formConfirmPassword.valid}">
+              
+            </div>
+            <div class="my-4">
+              <span class="alert alert-danger align-middle"
+                *ngIf="formData.errors?.invalid">
+                {{ 'USER.SIGNUP.PASSWORD_NO_MATCH' | translate }}
+              </span>
+            </div>
+            <div class="form-group form-check">
+              <input class="form-check-input" type="checkbox" formControlName="formTerms" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                {{ 'USER.SIGNUP.I_ACCEPT' | translate }} <a href="javascript: void(0);" (click)="showTermNConditions()">{{ 'USER.SIGNUP.BTN_TERMS' | translate }}</a>
+              </label>
+            </div>
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-primary btn-block" (click)="createUser()" [disabled]="!formData.valid"> {{ 'USER.SIGNUP.BTN_CREATE' | translate }} </button>
+            </div> <!-- form-group// -->      
+            <p class="text-center">{{ 'USER.SIGNUP.HAVE_ACCOUNT' | translate }} <a href="login">{{ 'USER.SIGNUP.BTN_LOGIN' | translate }}</a> </p>                                                                 
+        </form>
+        </article>
+      </div>
+    </div>
+  
+  </div> <!-- card.// -->
+  
+  </div> 
+  <!--container end.//-->
+  

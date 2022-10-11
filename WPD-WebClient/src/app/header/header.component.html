@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light wpd-border">
+  <!-- <div class="container-fluid"> -->
+    <!-- <div class="navbar-header"> -->
+      <a href="#" class="navbar-brand">WaterProofing Data - BETA</a>
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navMenus">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenus" [ngClass]="{ 'show': navbarOpen }">
+        <!-- Data Daries not part of Webportal -->
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item" [ngClass]="{ 'active': selectedComponent === 'Data_Daries' }">
+            <button class="nav-link btn btn-link"  (click)="navigate('Data_Daries')">{{ 'HEADER.DATA_DIARIES' | translate }}</button>
+          </li>
+        </ul> -->
+        <!-- Menu on Left side -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item d-none d-sm-block">
+            <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.geog.uni-heidelberg.de/gis/waterproofing_en.html" (click)="showAbout()" class="nav-link btn btn-link mt-2">
+              {{ 'HEADER.ABOUT' | translate }}
+              <i class="fas fa-info-circle"></i>
+            </a> -->
+            <button id="btnAbout" class="btn nav-link pull-right mt-2" (click)="showAbout()">
+              <i class="fas fa-info-circle"></i>
+            </button>
+          </li>
+          <!-- 
+          <li class="nav-item d-none d-sm-block">
+            <a target="_blank" rel="noopener noreferrer" href="https://warwick.ac.uk/fac/arts/schoolforcross-facultystudies/igsd/" class="nav-link">
+              <img id="logo_giscience" src="assets/img/university-of-warwick.jpg" height="30px">
+            </a>
+          </li>
+          <li class="nav-item d-none d-sm-block">
+            <a target="_blank" rel="noopener noreferrer" href="https://eaesp.fgv.br/centros/centro-estudos-administracao-publica-e-governo-1/sobre" class="nav-link">
+              <img id="logo_giscience" src="assets/img/fgv_easp.jpg" height="25px" width="70px">
+            </a>
+          </li> 
+          <li class="nav-item d-none d-sm-block">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.geog.uni-heidelberg.de/gis/" class="nav-link">
+              <img id="logo_giscience" src="assets/img/hd_logo_small.png" height="30px">
+            </a>
+          </li> -->
+          <li class="nav-item dropdown" (mouseenter)="langMenuOpen=true" (mouseleave)="langMenuOpen=false">
+            <!-- <label style="margin-bottom: 0rem;">
+              {{ 'HEADER.LANGSELECT' | translate }} -->
+              <!-- <i class="fas fa-language"></i> -->
+              <!-- <mat-select #langSelect (selectionChange)="changeLanguage($event.value)" [(value)]="selectedLanguage" (mouseenter)="langSelect.open()" (mouseleave)='langSelect.close()' (click)="langSelect.toggle()">
+                <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</mat-option>
+              </mat-select> -->
+            <!-- </label> -->
+            <a class="nav-link dropdown-toggle mt-2" #langSelect id="lang" role="button" data-toggle="dropdown" (click)="toggleLangDropdown()">
+              <i class="fas fa-language"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" [ngClass]="{ 'show': langMenuOpen  }" (click)="toggleLangDropdown()">
+              <a class="dropdown-item" *ngFor="let lang of translate.getLangs()" (click)="changeLanguage(lang)">{{lang}}</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" (mouseover)="userMenuOpen=true" (mouseout)="userMenuOpen=false">
+            <a *ngIf="!isLoggedIn()" class="nav-link dropdown-toggle mt-2" id="user" role="button" data-toggle="dropdown" (click)="toggleLogin()">
+            <!-- <a class="nav-link dropdown-toggle mt-2" id="user" role="button" data-toggle="dropdown"> -->
+              <i class="fas fa-user"></i>
+            </a>
+            <a *ngIf="loggedInUser" class="nav-link dropdown-toggle mt-2" id="user" role="button" data-toggle="dropdown" (click)="toggleLogin()">
+              <!-- <a class="nav-link dropdown-toggle mt-2" id="user" role="button" data-toggle="dropdown"> -->
+                <i class="fas fa-user"></i> {{loggedInUser.name}}
+              </a>
+            <!-- user related options -->
+            <div class="dropdown-menu dropdown-menu-right" [ngClass]="{ 'show': userMenuOpen }">
+            <!-- <div class="dropdown-menu dropdown-menu-right"> -->
+              <a class="dropdown-item" routerLink="login" *ngIf="!isLoggedIn()" (click)="toggleLogin()">{{ 'USER.LOGIN.LOGIN' | translate }}</a>
+              <a class="dropdown-item" routerLink="profile" routerLinkActive="active" *ngIf="isLoggedIn()" (click)="toggleLogin()">{{ 'USER.LOGIN.PROFILE' | translate }}</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="register" *ngIf="!isLoggedIn()" (click)="toggleLogin()">{{ 'USER.LOGIN.SIGNUP' | translate }}</a>
+              <!-- <a class="dropdown-item" routerLink="forgotPassword" *ngIf="!isLoggedIn()">{{ 'USER.LOGIN.FORGOT_PASSWORD' | translate }}</a> -->
+              <button class="dropdown-item" *ngIf="loggedIn" (click)="logout()">{{ 'USER.LOGIN.LOGOUT' | translate }}</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    
+  <!-- </div> -->
+<!-- </div> -->
+</nav>

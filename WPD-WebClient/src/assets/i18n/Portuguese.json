@@ -1,0 +1,300 @@
+{
+	"ADD_FM": {
+		"ADDRESS": "Endereço",
+		"ADDRESS_HINT": "Onde aconteceu a inundação? Por exemplo: nome da rua, nome da localidade",
+		"ADDRESS_PLACEHOLDER": "Localização",
+		"CHOOSE_FILE": "Escolher arquivo",
+		"DATE": "Data",
+		"DATE_HELPER2": "Se você não se lembra do mês, basta selecionar o ano",
+		"DATE_PLACEHOLDER": "Quando ocorreu essa inundação?",
+		"DONTREMEBERDATE": "Não lembro a data exata",
+		"HEADER": "Adicione sua memória de inundação",
+		"MEDIA": "Mídia: imagem / áudio / vídeo",
+		"MULTI_UPLOAD_HINT": "Para carregar vários arquivos, carregue um após o outro",
+		"PICK_FILE": "Escolha um arquivo",
+		"SAVE": "Salvar",
+		"STORY": "História",
+		"STORY_PLACEHOLDER": "Sua história aqui",
+		"TITLE": "Título",
+		"TITLE_PLACEHOLDER": "Dê um título à sua memória",
+		"UPLOAD": "Upload",
+		"UPLOAD_LIST": "Mídia carregada",
+		"UPLOAD_PROGRESS": "Progresso do upload"
+	},
+	"EDIT_FM": {
+		"ADDRESS": "Endereço",
+		"ADDRESS_HINT": "Pesquise o local ou arraste o ponto no mapa para o local inundado",
+		"ADDRESS_PLACEHOLDER": "Onde aconteceu a inundação? Por exemplo: nome da rua, nome da localidade",
+		"CHOOSE_FILE": "Escolher arquivo",
+		"DATE": "Data",
+		"DATE_HELPER2": "Se você não se lembra do mês, basta selecionar o ano",
+		"DATE_PLACEHOLDER": "Quando ocorreu essa inundação?",
+		"HEADER": "Edite sua memória de inundação",
+		"MEDIA": "Mídia: imagem / áudio / vídeo",
+		"MULTI_UPLOAD_HINT": "Para carregar vários arquivos, carregue um após o outro",
+		"PICK_ON_MAP": "Editar no mapa",
+		"SAVE": "Atualizar",
+		"STORY": "História",
+		"STORY_PLACEHOLDER": "Sua história aqui",
+		"TITLE": "Título",
+		"TITLE_PLACEHOLDER": "Dê um título à sua memória",
+		"UPLOAD": "Upload",
+		"UPLOAD_LIST": "Mídia carregada",
+		"UPLOAD_PROGRESS": "Progresso do upload"
+	},
+	"FLOODMEMORIES": {
+		"ADD_FM": "Adicione suas memórias",
+		"ADD_FM_TOOLTIP": "Faça login para adicionar sua memória do Flood",
+		"NO_MEMORIES": "Sem memória para o tempo selecionado OU visualização do mapa",
+		"TITLE": "Memórias de inundação ",
+		"LOGIN_ON_ERROR": "Faça login para acesso ilimitado"
+	},
+	"FLOODMEMORY": {
+		"APPROXDATE": "(Data aproximada)",
+		"DATE": "Evento ocorreu em",
+		"DELETE_BTN": "Deletar",
+		"EDIT_BTN": "Editar",
+		"NOMEDIA": "Nenhuma mídia"
+	},
+	"FM_ALERT": {
+		"ASSET_DELETE_HEADER": "Excluir arquivo",
+		"ASSET_DELETE_MESSAGE": "Você tem certeza de que deseja excluir um arquivo chamado",
+		"ASSET_FAILED_DELETE": "Incapaz de deletar mídia",
+		"CANT_DELETE_ASSET": "Não foi possível excluir a mídia porque nenhum ID de ativo foi encontrado",
+		"FILE_NOT_SUPPORTED": "Tipo de arquivo não suportado",
+		"FILE_TOO_LARGE": "O tamanho do arquivo selecionado é maior do que o permitido",
+		"FM_DELETE_FAILED": "Erro ao excluir a memória de inundação",
+		"FM_DELETE_MESSAGE": "Tem certeza de que deseja excluir esta memória de inundação?",
+		"FM_DELETE_SUCCESS": "Memória de inundação excluída",
+		"FM_DELETE_TITLE": "Excluir memória de inundação",
+		"FM_FAILED_UPDATE": "Incapaz de atualizar",
+		"FM_FAILED_UPLOAD": "Falha no carregamento",
+		"FM_NOFILE_TO_UPLOAD": "Selecione um arquivo para enviar",
+		"FM_SAVED_SUCCESS": "Memória salva com sucesso",
+		"FM_SAVE_FAILED": "Erro ao salvar a memória da inundação",
+		"FM_UPDATE_SUCCESS": "Memória atualizada com sucesso",
+		"UPLOAD_SUCCESS": "Carregado com sucesso"
+	},
+	"HEADER": {
+		"ABOUT": "Sobre",
+		"ABOUT_CONTENT_P1": "O projeto <a href='https://www.geog.uni-heidelberg.de/gis/waterproofing.html' target='_blank' rel='noopener noreferrer'> “Waterproofing Data” </a> investiga a governança dos riscos relacionados à água, com foco nos aspectos sociais e culturais das práticas de dados. Normalmente, os dados fluem dos níveis locais para os “centros de especialização” científicos e, em seguida, os alertas e intervenções relacionados às enchentes fluem de volta para os governos locais e para as comunidades. Repensar como os dados relacionados às enchentes são produzidos e como eles fluem pode ajudar a construir comunidades sustentáveis e resilientes às enchentes.",
+		"ABOUT_CONTENT_P2": "Para este fim, este projeto desenvolve três métodos inovadores em torno das práticas de dados, em diferentes locais e escalas:",
+		"ABOUT_CONTENT_P3": "Essas intervenções metodológicas transformarão a forma como os dados relacionados às enchentes são produzidos e fluem, criando novos arranjos de governança entre cidadãos, governos e especialistas em enchentes e, em última análise, aumentam a resiliência da comunidade relacionada às enchentes em comunidades vulneráveis de São Paulo e Acre, Brasil.",
+		"ABOUT_CONTENT_P4": "O projeto será conduzido por uma equipe internacional de pesquisadores com múltiplas experiências disciplinares do Brasil, Alemanha e Reino Unido, em estreita parceria com pesquisadores, partes interessadas e públicos de um estudo de caso multi-site sobre gestão de risco de inundação no Brasil. Além disso, os métodos e resultados deste estudo de caso serão a base para um diálogo transcultural com organizações governamentais e administração local envolvidas na gestão de risco de inundações na Alemanha (<a href = 'https: //www.geog.uni-heidelberg.de /gis/index_en.html 'target =' _ blank 'rel =' noopener noreferrer '> GIScience Heidelberg </a>) e o Reino Unido (<a href =' https: //warwick.ac.uk/fac/cross_fac/ cim / research / Waterproofing-data / 'target =' _ blank 'rel =' noopener noreferrer '> University of Warwick </a>). ",
+		"DATA_DIARIES": "Data Diaries",
+		"FLOOD_MEMORIES": "Memórias de inundação",
+		"FLOOD_PERCEPTION_MAPS": "Mapas de percepção de inundações",
+		"LANGSELECT": "Mudar idioma",
+		"OFFICIAL_DATA": "Dados oficiais",
+		"SELECTED_LANG": "_pt"
+	},
+	"LEFT_SIDEBAR": {
+		"CITIZEN": {
+			"DESC": "Dados gerados pelo cidadão",
+			"NAME": "cidadão"
+		},
+		"INFO_BUTTON": {
+			"DESCRIPTION": "Mais Informações",
+			"TITLE": "Info"
+		},
+		"OFFICIAL": {
+			"DESC": "Dados fornecidos por organizações governamentais",
+			"NAME": "oficial"
+		},
+		"SHOW_ALL_FM_BUTTON": {
+			"DESCRIPTION": "Mostrar toda a memória de inundação sem filtro de tempo",
+			"TITLE": "Mostrar toda a memória de inundação sem filtro de tempo"
+		},
+		"ZOOM_TO_EXTENT_BUTTON": {
+			"DESCRIPTION": "Zoom na extensão",
+			"TITLE": "Zoom na extensão"
+		},
+		"LIVE_FEATURES_LIST": {
+			"TITLE": "Vários dados na posição clicada, selecione um",
+			"TOOLTIP": "Selecione um para ver seus detalhes"
+		}
+	},
+	"MAP": {
+		"ATRISK_LAYER": {
+			"DESCRIPTION": "Áreas que os usuários prescreveram como “áreas de risco” Os usuários dessas áreas prescreveram essas áreas como “áreas de risco” em caso de inundação",
+			"NAME": "Elemento em risco"
+		},
+		"BASE_DARK": "Sombrio",
+		"BASE_MAP": "Mapa base",
+		"BASE_SAT": "Satélite",
+		"DETAIL": "",
+		"LAYER": "Camada",
+		"LAYER_NOT_FOUND": "Dados não encontrados",
+		"LEGEND": "Lenda",
+		"MAP_DETAILS": "Detalhes do mapa",
+		"NORMAL_LAYER": {
+			"DESCRIPTION": "Áreas inundadas durante inundações normais Com base na experiência e avaliação dos usuários - Partes que foram afetadas primeiro durante as inundações",
+			"NAME": "Inundação normal"
+		},
+		"OFFICIAL": {
+			"FLOODDEPT": {
+				"DESCRIPTION": "",
+				"NAME": "Profundidade da Inundação"
+			},
+			"FLOODING_LAYER": {
+				"DESCRIPTION": "",
+				"NAME": "Inundação"
+			},
+			"MASSMOVEMENT": {
+				"DESCRIPTION": "",
+				"NAME": "Movimento de massa"
+			},
+			"RAINFALL_LAYER": {
+				"DESCRIPTION": "",
+				"NAME": "Chuva"
+			}
+		},
+		"OVERFLOW_LAYER": {
+			"DESCRIPTION": "Máximo de áreas inundadas com base na experiência e avaliação dos usuários - Partes que foram afetadas pelas maiores inundações, que os usuários experimentaram",
+			"NAME": "Transbordar"
+		},
+		"RIOBRANCO": "Rio Branco",
+		"RISK_GENERAL_LAYER": {
+			"DESCRIPTION": "Ruas e locais que foram afetados durante as inundações Com base na experiência e avaliação do usuário - Rua e áreas que estão em risco de inundação",
+			"NAME": "No geral"
+		},
+		"WATERLEVEL_STREET": {
+			"NAME": "Nível da água na rua",
+			"DESCRIPTION": "Esta camada mostra os níveis de água percebidos pelos residentes na rua em diferentes locais durante uma enchente mais forte. Os entrevistados estimaram a altura da água em relação à sua própria altura corporal.",
+			"TOOLTIP": "Nível de água percebido durante enchentes mais fortes na rua "
+		},
+		"WATERLEVEL_HOME": {
+			"NAME": "Nível da água em casa",
+			"DESCRIPTION": "Esta camada mostra os níveis de água percebidos pelos residentes em ambientes fechados em diferentes locais durante uma enchente mais forte. Os entrevistados estimaram a altura da água em relação à sua própria altura corporal.",
+			"TOOLTIP": "Nível de água percebido durante enchentes internas mais fortes"
+		},
+		"FLOODRISK": {
+			"NAME": "Risco de inundação",
+			"DESCRIPTION": "Esta camada mostra as áreas de risco de inundação percebidas, mapeadas participativamente em 70 mapas de esboço individuais. Quanto mais escura for a cor, maior será o número de participantes que perceberam e marcaram esta área como uma área de risco de casas / edifícios durante as cheias mais fortes.",
+			"TOOLTIP": "Áreas percebidas de riscos de inundação"
+		},
+		"FIRSTFLOOD": {
+			"NAME": "Primeiro nível de inundação",
+			"DESCRIPTION": "Esta camada mostra as primeiras áreas inundadas percebidas, mapeadas participativamente em 70 mapas de esboço individuais. Quanto mais escura a cor, maior o número de participantes que perceberam e marcaram esta área como uma área que é inundada pela primeira vez após um evento de chuva forte.",
+			"TOOLTIP": "Primeiras áreas inundadas percebidas"
+		},
+		"MAXFLOOD": {
+			"NAME": "Inundação Máxima",
+			"DESCRIPTION": "Esta camada mostra as áreas de risco de inundação percebidas, mapeadas participativamente em 70 mapas de esboço individuais. Quanto mais escura a cor, maior o número de participantes que perceberam e marcaram esta área como uma área que foi inundada durante um evento de cheia máxima.",
+			"TOOLTIP": "Áreas percebidas de inundação máxima"
+		},
+		"RISK_PERCEPTION_LAYER": "Camadas de percepção de risco",
+		"SAOPAULO": "São Paulo",
+		"EXTENT_TOO_LARGE": "Não é possível consultar uma extensão tão grande do mapa, Aumente o zoom para extrair os dados da região",
+		"NO_DATA":"Sem dados para o recurso solicitado",
+		"GOTO_PLACEHOLDER": "Pesquise por localização Eg: São Paulo",
+		"PERCEPTIONLAYER": "Percepção"
+	},
+	"USER": {
+		"LOGIN": {
+			"BTN_SINGIN": "Fazer login",
+			"EMAIL": "Número de teléfono",
+			"EMAIL_PASSWORD_NEEDED": "Nome de usuário e senha necessários",
+			"EMAIL_PLACEHOLDER": "12345678910",
+			"ERROR": "Incapaz de efetuar login",
+			"FAILED": "Nome de usuário ou senha incorretos",
+			"FORGOT_PASSWORD": "Esqueceu a senha?",
+			"HEADER": "Assinar em",
+			"LOGIN": "Assinar em",
+			"LOGOUT": "Fazer logoff ",
+			"LOGOUT_SUCCESS": "Saiu com sucesso",
+			"PASSWORD": "Senha",
+			"PROFILE": "Perfil",
+			"SIGNUP": "Nuevo por aquí? Registrar",
+			"SUCCESS": "Conectado com sucesso",
+			"TITLE": "insira seus detalhes"
+		},
+		"PROFILE": {
+			"ACTION": "Açao",
+			"BTN_UPDATE": "Atualizar",
+			"DATE": "Encontro",
+			"DELETE": "Excluir",
+			"EDIT": "Editar",
+			"EMAIL": "Email",
+			"FM_LIST": "Lista de suas memórias de inundação",
+			"FM_LIST_FAILED": "Erro ao carregar a lista de memória de inundação",
+			"ID": "ID",
+			"LOGIN_MESSAGE": "Faça login para ver esta página",
+			"NAME": "Nome",
+			"NEW_PASSWORD": "Nova senha",
+			"NO_FM": "Você não tem nenhuma memória de inundação",
+			"PASSWORD_PLACEHOLDER": "senha",
+			"PROFILE_HEADER": "Perfil",
+			"TITLE": "Título"
+		},
+		"SIGNUP": {
+			"ALERT_SIGNUP_FAILED": "Incapaz de criar novo usuário",
+			"ALERT_SIGNUP_SUCCESS": "Agora você está registrado, agora você pode fazer o login",
+			"BTN_CREATE": "Criar conta",
+			"BTN_LOGIN": "Fazer login",
+			"BTN_TERMS": "termo e condição",
+			"CONFIRM_PASSWORD": "Confirmar senha",
+			"CONFIRM_PASSWORD_PLACEHOLDER": "Repetir a senha",
+			"HAVE_ACCOUNT": "Tem conta?",
+			"HEADER": "Criar conta",
+			"I_ACCEPT": "Aceito a",
+			"NAME": "Nome completo",
+			"NAME_PLACEHOLDER": "John Doe",
+			"PASSWORD": "Senha",
+			"PASSWORD_HELPER": "A senha deve conter no mínimo seis caracteres",
+			"PASSWORD_NO_MATCH": "Senha não corresponde",
+			"PHONE": "Número de celular",
+			"PHONE_EXIST": "Número de telefone já registrado",
+			"PHONE_HELPER": "Número de celular sem código de país",
+			"POINT_1": "Você cria e mantém suas memórias relacionadas às Inundações",
+			"POINT_2": "Nós não compartilhamos seu número de celular com fornecedores terceirizados",
+			"TERMS": {
+				"BODY": "asdfsa asdfasdf alkjahsdflkjahdsflkjhlekjhr lkjherlkjherlkvf8uylsdhvÖIEH LHSRÖOERGLKJSYVJkjslgkerliusyd dsfkjhadsl kjhdfaösd sdkfhaslkhf",
+				"HEADER": "Termos e Condições"
+			},
+			"TITLE": "Comece com sua conta gratuita",
+			"WHY_REGISTER": "Por que registrar?"
+		}
+	},
+	"LIVEFEATURE": {
+		"DESCRIPTION": "Description",
+		"IMAGES": "Images",
+		"LATITUDE": "Latitude",
+		"LONGITUDE": "Longitude",
+		"PASSABLE": "Passable",
+		"DATE": "Date",
+		"TIME": "Time",
+		"ADDRESS": "Address",
+		"UF": "Uf",
+		"MUNICIPIO": "Municipio",
+		"PROCESSO": "Processo",
+		"CLASSE": "Classe",
+		"ANO": "Ano",
+		"IDESTACAO": "Idestacao",
+		"NOME": "Nome",
+		"STATUS": "Status",
+		"CODESTACAO": "Codestacao",
+		"IDMUNICIPIO": "ID municipio",
+		"CIDADE": "Cidade",
+		"CODIBGEMUNICIPIO": "Codibgemunicipio",
+		"IDREDE": "Idrede",
+		"NOMEREDE": "Nomerede",
+		"SIGLAREDE": "Siglarede",
+		"IDTIPOESTACAO": "Idtipoestacao",
+		"DESCRICAOESTACAO": "Descricaoestacao",
+		"OFFSET": "Offset",
+		"COTAATENCAO": "Cotaatencao",
+		"COTAALERTA": "Cotaalerta",
+		"MEDICAO": "Medicao",
+		"UNIDADEMEDICAO": "Unidademedicao",
+		"SITUATION": 	"Situation",
+		"EVENTDATE": "Event date",
+		"EVENTTIME": "Event time",
+		"EVENTADDRESS": "Event Address",
+		"INSTITUTENAME": "Institute name",
+		"INSTITUTETYPE": "Institute type",
+		"RAINAMOUNT": "Rainamount",
+		"COTATRANSBORDAMENTO": "Cotatransbordamento",
+		"COMMENTS": "Comments"
+	}
+}

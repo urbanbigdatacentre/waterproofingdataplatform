@@ -1,0 +1,128 @@
+<form name="addFmForm" [formGroup]="formData" novalidate class="modal-body">
+  <button type="button" class="btn btn-outline-dark float-right" (click)="closeDialog()" title="Close">
+    <i class="fas fa-times"></i>
+  </button>
+  <!-- <div id="alertMessage" *ngIf="message" [ngClass]=
+    "{ 
+      'alert': message, 
+      'alert-success': message.type === 'success', 
+      'alert-danger': message.type === 'error',
+      'alert-warning': message.type === 'warning', 
+      'center-block': true }">
+    {{message.text}}
+    <button type="button" class="close" aria-label="Close" (click)="dismissAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <h2>{{ 'ADD_FM.HEADER' | translate }}</h2>
+  <div class="form-group">
+    <label for="title">{{ 'ADD_FM.TITLE' | translate }}</label>
+    <input type="text" class="form-control" formControlName="formTitle" placeholder="{{ 'ADD_FM.TITLE_PLACEHOLDER' | translate }}" [ngClass]="{'is-invalid': formTitle.errors && (formTitle.touched || formTitle.dirty), 'is-valid':formTitle.valid}">
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  </div>
+  <div class="form-group">
+    <label for="content">{{ 'ADD_FM.STORY' | translate }}</label>
+    <textarea class="form-control" rows="4" formControlName="formContent" placeholder="{{ 'ADD_FM.STORY_PLACEHOLDER' | translate }}" [ngClass]="{'is-invalid': formContent.errors && (formContent.touched || formContent.dirty), 'is-valid':formContent.valid}"></textarea>
+  </div>
+  <!-- location -->
+  <app-edit-on-map [fmOnMap]="fmNewLocation" (newLocation)="updateLocation($event)"></app-edit-on-map>
+
+  <!-- <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <mat-label>{{ 'ADD_FM.DATE' | translate }}</mat-label>
+      <input matInput [max]="maxDate" [matDatepicker]="picker" formControlName="formTime" [ngClass]="{'is-invalid': formTime.errors && (formTime.touched || formTime.dirty), 'is-valid':formTime.valid}">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <small id="timeHelp" class="form-text text-muted">{{ 'ADD_FM.DATE_PLACEHOLDER' | translate }}</small>
+  </div> -->
+  <!-- date selector -->
+  <div class="form-group" *ngIf="!isApproxDate">
+    <mat-checkbox [ngModelOptions]="{standalone: true}" [(ngModel)]="isApproxDate">{{ 'ADD_FM.DONTREMEBERDATE' | translate }}</mat-checkbox>&nbsp;
+    <!-- fixed date -->
+    <mat-form-field *ngIf="!isApproxDate" class="example-full-width">
+      <mat-label>{{ 'ADD_FM.DATE' | translate }}</mat-label>
+      <input matInput [max]="maxDate" [matDatepicker]="picker" formControlName="formTime" [ngClass]="{'is-invalid': formTime.errors && (formTime.touched || formTime.dirty), 'is-valid':formTime.valid}">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <small id="timeHelp" class="form-text text-muted">{{ 'ADD_FM.DATE_PLACEHOLDER' | translate }}</small>
+  </div>
+  <!-- approx date -->
+  <div class="form-group" *ngIf="isApproxDate">
+    <mat-checkbox [ngModelOptions]="{standalone: true}" [(ngModel)]="isApproxDate">{{ 'ADD_FM.DONTREMEBERDATE' | translate }}</mat-checkbox>&nbsp;
+    <mat-form-field>
+      <mat-label>Year</mat-label>
+      <mat-select [ngModelOptions]="{standalone: true}" [(ngModel)]="approxYear">
+        <mat-option *ngFor="let year of years" [value]="year">
+          {{year}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>&nbsp;
+    <mat-form-field>
+      <mat-label>Month</mat-label>
+      <mat-select [ngModelOptions]="{standalone: true}" [(ngModel)]="approxMonth">
+        <mat-option *ngFor="let month of months" [value]="month">
+          {{month}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <small id="timeHelp2" class="form-text text-muted">{{ 'ADD_FM.DATE_PLACEHOLDER' | translate }} {{ 'ADD_FM.DATE_HELPER2' | translate }}</small>
+  </div>
+  <!-- end of dateselector -->
+
+  <label for="imageUploadForm"><i class="far fa-image mr-2"></i>{{ 'ADD_FM.MEDIA' | translate }}</label>
+  <!-- <div class="form-group" *ngFor="let image of images; let i = index" id="imageUploadForm"> -->
+  <div class="form-group" id="imageUploadForm">
+    <div class="input-group mb-3">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="i" aria-describedby="fileUpload" (change)="fileProgress($event)" style="cursor: pointer;">
+        <!-- <input type="file" id="i" aria-describedby="fileUpload" (change)="fileProgress($event)" #fileInput> -->
+        <label class="custom-file-label" for="i">{{ 'ADD_FM.CHOOSE_FILE' | translate }}Choose file</label>
+      </div>
+      <!-- <button class="input-group-text" id="i1" (click)="fileInput.click()" style="cursor: default;">{{ 'ADD_FM.PICK_FILE' | translate }}</button> -->
+      <div class="input-group-append">
+        <button class="input-group-text" id="fileUpload" (click)="uploadMedia()" style="cursor: default;">{{ 'ADD_FM.UPLOAD' | translate }}</button>
+      </div>
+      <!-- <button class="btn" data-toggle="tooltip" data-placement="right" title="Add more image" (click)="addImage()"><i class="fas fa-plus-circle"></i></button> -->
+    </div>
+    <small *ngIf="fileUploadProgress">
+      {{ 'ADD_FM.UPLOAD_PROGRESS' | translate }}: {{ fileUploadProgress }}
+    </small>
+    <!-- <div class="image-preview mb-3" *ngIf="previewUrl">
+      <img [src]="previewUrl" height="300" />                 
+    </div> -->
+    <!-- <div class="mb-3" *ngIf="uploadedFilePath">
+        {{uploadedFilePath}}
+    </div> -->
+    <small id="uploadHelp" class="form-text text-muted">{{ 'ADD_FM.MULTI_UPLOAD_HINT' | translate }}</small>
+  </div>
+  <div id="uploadedMediaList" class="mb-3" *ngIf="uploadedMedia.length > 0">
+    <label for="uploadedMediaList">{{ 'ADD_FM.UPLOAD_LIST' | translate }} : </label>
+    <ul class="list-group" id="uploadedImageList">
+      <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let media of uploadedMedia">
+        {{media.name}}
+        <span class="badge badge-primary badge-pill"><i class="fas fa-check-circle"></i></span>
+      </li>
+    </ul>
+    <!-- <ul class="list-group" id="uploadedImageList">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cras justo odio
+        <span class="badge badge-primary badge-pill"><i class="fas fa-check-circle"></i></span>
+      </li>
+    </ul>
+    <ul class="list-group" id="uploadedAudioList">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cras justo odio
+        <span class="badge badge-primary badge-pill"><i class="fas fa-check-circle"></i></span>
+      </li>
+    </ul>
+    <ul class="list-group" id="uploadedVideoList">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cras justo odio
+        <span class="badge badge-primary badge-pill"><i class="fas fa-check-circle"></i></span>
+      </li>
+    </ul> -->
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="saveFM()" [disabled]="!formData.valid">{{ 'ADD_FM.SAVE' | translate }}</button>
+</form>

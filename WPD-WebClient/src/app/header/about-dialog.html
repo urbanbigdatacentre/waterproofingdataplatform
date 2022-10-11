@@ -1,0 +1,81 @@
+<h1>{{'HEADER.ABOUT' | translate }}
+  <button type="button" class="btn btn-outline-dark float-right" (click)="onCloseClick()" title="Close">
+    <i class="fas fa-times"></i>
+  </button>
+</h1>
+<mat-dialog-content class="mat-typography">
+  <!-- <pre> -->
+  <!-- <div class="background"
+      style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; top: 0; display: flex; justify-content: center; align-items: center;">
+      <div class="about-content"
+          style="width: 70%; height: 50%; background-color: white; border-radius: 10px; border-style: groove; border-radius: 3%; border-width: 1em;">
+          <div id="Scrollbox"
+              style="bottom:0px; overflow-y:scroll; height: 100%; font-family:Arial, Helvetica, sans-serif;"> -->
+              <!-- <h2
+                  style="text-align: center; vertical-align: middle; margin-top: 10px; background-color: rgb(116, 114, 114); color: white; height: 40px;">
+                  About</h2> -->
+                <p style="margin-left: 15px; margin-right: 15px; text-align: justify;" 
+                    [innerHTML]="'HEADER.ABOUT_CONTENT_P1' | translate ">
+                </p>
+              <p style="margin-left: 15px; margin-right: 15px; text-align: justify;">{{'HEADER.ABOUT_CONTENT_P2' | translate }}</p>
+              <div class="img_methods" style="text-align: center;">
+                  <img class="graphic_methods img-fluid" src="assets/img/about_graphic.png">
+              </div>
+              <p style="margin-left: 15px; margin-right: 15px; text-align: justify;">{{'HEADER.ABOUT_CONTENT_P3' | translate }}</p>
+              <p style="margin-left: 15px; margin-right: 15px; text-align: justify;"
+                [innerHTML]="'HEADER.ABOUT_CONTENT_P4' | translate "></p>
+              <div class="text-center">
+                  <img src="assets/img/workshop.jpg" class="img-fluid" alt="(IMAGE) Workprocess"
+                      style="margin-left: 5%; margin-right: 10%; width: 360px; border-style: groove; border-radius: 1%; border-width: 0.5em; margin-top: 6px;">
+                  <img src="assets/img/group_photo.jpg" class="img-fluid" alt="(IMAGE) Waterproofing Data Team in in São Paulo"
+                      style="width: 650px; border-style: groove; border-radius: 1%; border-width: 0.5em; margin-top: 6px;">
+              </div>
+              <br><br>
+              <h3 style="text-align: center;">Funded by:</h3>
+              <div style=" text-align: center; border-style: solid; border-color: rgb(116, 114, 114); border-radius: 1%; border-width: 0.5em;"
+                  class="border_logos">
+                  <br>
+                  <div class="funded_logos">
+                      <h4 style="background-color: rgb(116, 114, 114); color: white;">Project Partners</h4>
+                      <img src="assets/img/logo/Warwick.png" class="img-fluid mr-4" alt="(IMAGE) University of Warwick">
+                      <img src="assets/img/logo/FONA.png" class="img-fluid mr-4" alt="(IMAGE) FONA Social-ecological Research">
+                      <img src="assets/img/logo/FGV.png" class="img-fluid mr-4"
+                          alt="(IMAGE) Escola de Administração de Empresas de São Paulo da Fundação Getulio Vargas">
+                      <img src="assets/img/logo/Uni_HD.png" class="img-fluid mr-4" alt="(IMAGE) Heidelberg University" >
+                      <br>
+                      <h4 style="background-color: rgb(116, 114, 114); color: white;">Co-operating Organisations</h4>
+                      <img src="assets/img/logo/Cemaden.png" class="img-fluid mr-4" 
+                          alt="(IMAGE) CEMADEN - Centro Nacional de Monitoramento e Alertas de Desastres Naturais"
+                          >
+                      <img src="assets/img/logo/Prefeitura_sao_paulo.png" class="img-fluid mr-4" 
+                          alt="(IMAGE) Prefeitura de São Paulo Inovação e Tecnologia" >
+                      <img src="assets/img/logo/Sema.png" class="img-fluid mr-4" alt="(IMAGE) Secretaria de Infraestrutura e Meio Ambiente do Acre"
+                          >
+                      <img src="assets/img/logo/CPRM.jpg" class="img-fluid mr-4" alt="(IMAGE) Serviço Geológico do Brasil" >
+                      <img src="assets/img/logo/B_geological.png" class="img-fluid mr-4" alt="(IMAGE) British Geological Survey"
+                          >
+                      <br>
+                      <h4 style="background-color: rgb(116, 114, 114); color: white;">Funding Agencies</h4>
+                      <img src="assets/img/logo/ESRC.jpg" class="img-fluid mr-4" alt="(IMAGE) Economic and Social Research Council"
+                          >
+                      <img src="assets/img/logo/FAPESP.png" class="img-fluid mr-4" alt="(IMAGE) The São Paulo Research Foundation"
+                          >
+                      <img src="assets/img/logo/Ferderal_misistry.png" class="img-fluid mr-4" alt="(IMAGE) Federal Ministry of Education and Research"
+                          >
+                      <img src="assets/img/logo/Horizon.png" class="img-fluid mr-4" alt="(IMAGE) EU Framework Programme for Research and Innovation"
+                          >
+                      <br>
+                      <h4 style="background-color: rgb(116, 114, 114); color: white;">Programme Coordination</h4>
+                      <img src="assets/img/logo/Transformation.png" class="img-fluid mr-4" alt="(IMAGE) Transformations to Sustainability"
+                          >
+                      <img src="assets/img/logo/Belmont.png" class="img-fluid mr-4" alt="(IMAGE) Belmont Forum" >
+                      <img src="assets/img/logo/NORFACE.png" class="img-fluid mr-4" alt="(IMAGE) Norface" >
+                      <img src="assets/img/logo/ISC.png" class="img-fluid mr-4" alt="(IMAGE) International Science Council"
+                          >
+                  </div>
+              </div>
+          <!-- </div>
+      </div>
+  </div> -->
+  <!-- </pre> -->
+</mat-dialog-content>

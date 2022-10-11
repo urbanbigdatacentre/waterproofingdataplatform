@@ -1,0 +1,29 @@
+<!-- <div class="row"> -->
+<!-- <div class="form-group col-10" style="padding: 0.1em;"> -->
+<div class="form-group">
+  <!-- <label for="location">{{ 'ADD_FM.ADDRESS_PLACEHOLDER' | translate }}</label> -->
+  <div class="input-group">
+    <input type = "text" 
+      class="form-control"
+      placeholder = "{{ 'MAP.GOTO_PLACEHOLDER' | translate }}" 
+      aria-label = "Location" 
+      matInput 
+      [formControl] = "formLocation" 
+      [matAutocomplete] = "auto"
+      [ngStyle]="{'border': '1px solid #ced4da'}">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let loc of locations | async" 
+        [value]="loc"
+        (click)="locationValid=true"
+        style="font-size: 12px;">
+        {{loc.properties.title}}
+      </mat-option>
+    </mat-autocomplete>
+  </div>
+</div>
+<!-- <div class="col-2" style="padding: 0;">
+  <button >
+    <i class="fas fa-search-location"></i>
+  </button>
+</div> -->
+<!-- </div> -->

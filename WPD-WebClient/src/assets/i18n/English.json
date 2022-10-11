@@ -1,0 +1,300 @@
+{
+	"ADD_FM": {
+		"ADDRESS": "Address",
+		"ADDRESS_HINT": "Where did flooding happened? Eg: Street name, Locality name",
+		"ADDRESS_PLACEHOLDER": "Location",
+		"CHOOSE_FILE": "Choose file",
+		"DATE": "Date",
+		"DATE_HELPER2": "If you don't remember the month, just select the year",
+		"DATE_PLACEHOLDER": "When did this flooding happend?",
+		"DONTREMEBERDATE": "I don't remember the exact date",
+		"HEADER": "Add your Flood Memory",
+		"MEDIA": "Media: Image / Audio / Video",
+		"MULTI_UPLOAD_HINT": "To upload multiple file, upload one after the other",
+		"PICK_FILE": "Pick a file",
+		"SAVE": "Save",
+		"STORY": "Story",
+		"STORY_PLACEHOLDER": "Your story here",
+		"TITLE": "Title",
+		"TITLE_PLACEHOLDER": "Give a title to your memory",
+		"UPLOAD": "Upload",
+		"UPLOAD_LIST": "Uploaded media",
+		"UPLOAD_PROGRESS": "Upload progress"
+	},
+	"EDIT_FM": {
+		"ADDRESS": "Address",
+		"ADDRESS_HINT": "Search location or drag the point on Map to your Flood memory's location",
+		"ADDRESS_PLACEHOLDER": "Where did flooding happened? Eg: Street name, Locality name",
+		"CHOOSE_FILE": "Choose file",
+		"DATE": "Date",
+		"DATE_HELPER2": "If you don't remember the month, just select the year",
+		"DATE_PLACEHOLDER": "When did this flooding happend?",
+		"HEADER": "Edit your Flood Memory",
+		"MEDIA": "Media: Image / Audio / Video",
+		"MULTI_UPLOAD_HINT": "To upload multiple file, upload one after the other",
+		"PICK_ON_MAP": "Edit on Map",
+		"SAVE": "Update",
+		"STORY": "Story",
+		"STORY_PLACEHOLDER": "Your story here",
+		"TITLE": "Title",
+		"TITLE_PLACEHOLDER": "Give a title to your memory",
+		"UPLOAD": "Upload",
+		"UPLOAD_LIST": "Uploaded media",
+		"UPLOAD_PROGRESS": "Upload progress"
+	},
+	"FLOODMEMORIES": {
+		"ADD_FM": "Add your memories",
+		"ADD_FM_TOOLTIP": "Please login to Add your Flood memory",
+		"NO_MEMORIES": "No memories for Selected time OR map view",
+		"TITLE": "Flood Memories",
+		"LOGIN_ON_ERROR": "Please login for unlimited access"
+	},
+	"FLOODMEMORY": {
+		"APPROXDATE": "(Approximate Date)",
+		"DATE": "Event occurred on",
+		"DELETE_BTN": "Delete",
+		"EDIT_BTN": "Edit",
+		"NOMEDIA": "No Media"
+	},
+	"FM_ALERT": {
+		"ASSET_DELETE_HEADER": "Delete file",
+		"ASSET_DELETE_MESSAGE": "Are you sure you want to delete file named",
+		"ASSET_FAILED_DELETE": "Unable to delete media",
+		"CANT_DELETE_ASSET": "Sorry can't delete media as No asset ID was found",
+		"FILE_NOT_SUPPORTED": "File type not supported",
+		"FILE_TOO_LARGE": "Selected file size is larger than allowed",
+		"FM_DELETE_FAILED": "Error while deleting Flood memory",
+		"FM_DELETE_MESSAGE": "Are you sure you want to delete this Flood Memory?",
+		"FM_DELETE_SUCCESS": "Flood memory deleted",
+		"FM_DELETE_TITLE": "Delete Flood Memory",
+		"FM_FAILED_UPDATE": "Unable to update",
+		"FM_FAILED_UPLOAD": "Failed to upload",
+		"FM_NOFILE_TO_UPLOAD": "Please select a file to upload",
+		"FM_SAVED_SUCCESS": "Memory saved successfully",
+		"FM_SAVE_FAILED": "Error while saving Flood memory",
+		"FM_UPDATE_SUCCESS": "Memory updated successfully",
+		"UPLOAD_SUCCESS": " uploaded successfully"
+	},
+	"HEADER": {
+		"ABOUT": "About",
+		"ABOUT_CONTENT_P1": "The project <a href='https://www.geog.uni-heidelberg.de/gis/waterproofing.html' target='_blank' rel='noopener noreferrer'>“Waterproofing Data”  </a>investigates the governance of water-related risks, with a focus on social and cultural aspects of data practices. Typically, data flows up from local levels to scientific “centres of expertise”, and then flood-related alerts and interventions flow back down through local governments and into communities. Rethinking how flood-related data is produced, and how it flows, can help build sustainable, flood resilient communities.",
+		"ABOUT_CONTENT_P2": "To this end, this project develops three innovative methods around data practices, across different sites and scales:",
+		"ABOUT_CONTENT_P3": "These methodological interventions will transform how flood-related data is produced and flows, creating new governance arrangements between citizens, governments and flood experts and, ultimately, increased community resilience related to floods in vulnerable communities of Sao Paulo and Acre, Brazil.",
+		"ABOUT_CONTENT_P4": "The project will be conducted by an international team of researchers with multiple disciplinary backgrounds from Brazil, Germany and the UK, in close partnership with researchers, stakeholders and publics of a multi-site case study on flood risk management in Brazil. Furthermore, the methods and results of this case study will be the basis for a transcultural dialogue with government organisations and local administration involved in flood risk management in Germany (<a href='https://www.geog.uni-heidelberg.de/gis/index_en.html' target='_blank' rel='noopener noreferrer'>GIScience Heidelberg</a>) and the United Kingdom (<a href='https://warwick.ac.uk/fac/cross_fac/cim/research/waterproofing-data/' target='_blank' rel='noopener noreferrer'>University of Warwick</a>).",
+		"DATA_DIARIES": "Data Diaries",
+		"FLOOD_MEMORIES": "Flood Memories",
+		"FLOOD_PERCEPTION_MAPS": "Flood Perception Maps",
+		"LANGSELECT": "Change Language",
+		"OFFICIAL_DATA": "Official Data",
+		"SELECTED_LANG": "_en"
+	},
+	"LEFT_SIDEBAR": {
+		"CITIZEN": {
+			"DESC": "This dataset has been created by citizens as part of the waterproofing data project",
+			"NAME": "citizen"
+		},
+		"INFO_BUTTON": {
+			"DESCRIPTION": "More information",
+			"TITLE": "Info"
+		},
+		"OFFICIAL": {
+			"DESC": "This dataset has been created by an official source, organization or agency and compiled by researchers from the waterproofing data project to allow comparisons against citizen-generated data",
+			"NAME": "official"
+		},
+		"SHOW_ALL_FM_BUTTON": {
+			"DESCRIPTION": "Show all Flood Memory without time filter",
+			"TITLE": "Show all Flood Memory without time filter"
+		},
+		"ZOOM_TO_EXTENT_BUTTON": {
+			"DESCRIPTION": "Zoom to Extent",
+			"TITLE": "Zoom to Extent"
+		},
+		"LIVE_FEATURES_LIST": {
+			"TITLE": "Multiple data at clicked position, Select one",
+			"TOOLTIP": "Select one to view its details"
+		}
+	},
+	"MAP": {
+		"ATRISK_LAYER": {
+			"DESCRIPTION": "Areas which users precepted as “Risk areas” Users of these areas precepted these areas as “Risk areas” in flooding event",
+			"NAME": "Element at Risk"
+		},
+		"BASE_DARK": "Dark",
+		"BASE_MAP": "Base Map",
+		"BASE_SAT": "Satellite",
+		"DETAIL": "Detail",
+		"LAYER": "Layer",
+		"LAYER_NOT_FOUND": "Data Not Found",
+		"LEGEND": "Legend",
+		"MAP_DETAILS": "Map Details",
+		"NORMAL_LAYER": {
+			"DESCRIPTION": "Flooded areas during normal floods Based on users experience and evaluation - Parts which were affected first during floodings",
+			"NAME": "Normal Flood"
+		},
+		"OFFICIAL": {
+			"FLOODDEPT": {
+				"DESCRIPTION": "",
+				"NAME": "Flood Depth"
+			},
+			"FLOODING_LAYER": {
+				"DESCRIPTION": "",
+				"NAME": "Flooding"
+			},
+			"MASSMOVEMENT": {
+				"DESCRIPTION": "",
+				"NAME": "Mass Movement"
+			},
+			"RAINFALL_LAYER": {
+				"DESCRIPTION": "",
+				"NAME": "Rainfall"
+			}
+		},
+		"OVERFLOW_LAYER": {
+			"DESCRIPTION": "Maximum flooded areas Based on users experience and evaluation - Parts which were affected by highest flooding, which users experienced",
+			"NAME": "Overflow"
+		},
+		"RIOBRANCO": "Rio Branco",
+		"RISK_GENERAL_LAYER": {
+			"DESCRIPTION": "Streets and Places which were affected during flooding Based on user experience and evaluation- Street and areas which are in flood risk",
+			"NAME": "Overall"
+		},
+		"WATERLEVEL_STREET": {
+			"NAME": "Water level on street",
+			"DESCRIPTION": "This layer shows the perceived water levels by residents in the street on different locations during a stronger flooding. The respondents estimated the height of the water in relation to their own body height. ",
+			"TOOLTIP": "Perceived water level during stronger flooding in the street "
+		},
+		"WATERLEVEL_HOME": {
+			"NAME": "Water level in home",
+			"DESCRIPTION": "This layer shows the perceived water levels by residents indoors on different locations during a stronger flooding. The respondents estimated the height of the water in relation to their own body height.",
+			"TOOLTIP": "Perceived water level during stronger flooding indoor"
+		},
+		"FLOODRISK": {
+			"NAME": "Flood risk",
+			"DESCRIPTION": "This layer shows the perceived flooding risk areas, participatory mapped on 70 individual sketch maps. The darker the colour, the higher the number of participants who perceived and marked this area as an area in which houses / buildings were at risk during the strongest flood.",
+			"TOOLTIP": "Perceived areas of flooding risks"
+		},
+		"FIRSTFLOOD": {
+			"NAME": "First Flood level",
+			"DESCRIPTION": "This layer shows the perceived first flooded areas, participatory mapped on 70 individual sketch maps. The darker the colour, the higher the number of participants who perceived and marked this area as an area that is first flooded after a heavy rain event.",
+			"TOOLTIP": "Perceived first flooded areas"
+		},
+		"MAXFLOOD": {
+			"NAME": "Maximum Flood",
+			"DESCRIPTION": "This layer shows the perceived flooding risk areas, participatory mapped on 70 individual sketch maps. The darker the colour, the higher the number of participants who perceived and marked this area as an area which was flooded during a maximum flooding event.",
+			"TOOLTIP": "Perceived areas of maximum flooding"
+		},
+		"RISK_PERCEPTION_LAYER": "Risk Perception Layers",
+		"SAOPAULO": "São Paulo",
+		"EXTENT_TOO_LARGE": "Can't query for such large map extent, Please Zoom In to extract data for the region",
+		"NO_DATA":"No data for the requested feature",
+		"GOTO_PLACEHOLDER": "Search for location Eg: São Paulo",
+		"PERCEPTIONLAYER": "Perception"
+	},
+	"USER": {
+		"LOGIN": {
+			"BTN_SINGIN": "Sign in",
+			"EMAIL": "Telephone number",
+			"EMAIL_PASSWORD_NEEDED": "Username and Password needed",
+			"EMAIL_PLACEHOLDER": "12345678910",
+			"ERROR": "Unable to log in",
+			"FAILED": "Username or Password incorrect",
+			"FORGOT_PASSWORD": "Forgot password?",
+			"HEADER": "Sign In",
+			"LOGIN": "Sign In",
+			"LOGOUT": "Sign Out",
+			"LOGOUT_SUCCESS": "Successfully logged out",
+			"PASSWORD": "Password",
+			"PROFILE": "Profile",
+			"SIGNUP": "New around here? Sign up",
+			"SUCCESS": "Successfully logged in",
+			"TITLE": "Enter your details"
+		},
+		"PROFILE": {
+			"ACTION": "Action",
+			"BTN_UPDATE": "Update",
+			"DATE": "Date",
+			"DELETE": "Delete",
+			"EDIT": "Edit",
+			"EMAIL": "Email",
+			"FM_LIST": "List of your Flood Memories",
+			"FM_LIST_FAILED": "Error while loading the Flood Memory list",
+			"ID": "ID",
+			"LOGIN_MESSAGE": "Login to view this page",
+			"NAME": "Name",
+			"NEW_PASSWORD": "New Password",
+			"NO_FM": "You don't have any Flood memory",
+			"PASSWORD_PLACEHOLDER": "Password",
+			"PROFILE_HEADER": "Profile",
+			"TITLE": "Title"
+		},
+		"SIGNUP": {
+			"ALERT_SIGNUP_FAILED": "Unable to create new user",
+			"ALERT_SIGNUP_SUCCESS": "You are now registered, please wait while we log you in...",
+			"BTN_CREATE": "Create Account",
+			"BTN_LOGIN": "Log In",
+			"BTN_TERMS": "term and condition",
+			"CONFIRM_PASSWORD": "Confirm Password",
+			"CONFIRM_PASSWORD_PLACEHOLDER": "Repeat Password",
+			"HAVE_ACCOUNT": "Have an account?",
+			"HEADER": "Create Account",
+			"I_ACCEPT": "I Accept the",
+			"NAME": "Full name",
+			"NAME_PLACEHOLDER": "John Doe",
+			"PASSWORD": "Password",
+			"PASSWORD_HELPER": "Password must contain minimum six characters",
+			"PASSWORD_NO_MATCH": "Password doesn't match",
+			"PHONE": "Mobile Number",
+			"PHONE_EXIST": "Phone Number already registered",
+			"PHONE_HELPER": "Mobile number without country code",
+			"POINT_1": "You create and maintain your Flood related memories",
+			"POINT_2": "We do not share your Mobile number with Third party vendors",
+			"TERMS": {
+				"BODY": "asdfsa asdfasdf alkjahsdflkjahdsflkjhlekjhr lkjherlkjherlkvf8uylsdhvÖIEH LHSRÖOERGLKJSYVJkjslgkerliusyd dsfkjhadsl kjhdfaösd sdkfhaslkhf",
+				"HEADER": "Terms and Conditions"
+			},
+			"TITLE": "Get started with your free account",
+			"WHY_REGISTER": "Why Register? "
+		}
+	},
+	"LIVEFEATURE": {
+		"DESCRIPTION": "Description",
+		"IMAGES": "Images",
+		"LATITUDE": "Latitude",
+		"LONGITUDE": "Longitude",
+		"PASSABLE": "Passable",
+		"DATE": "Date",
+		"TIME": "Team",
+		"ADDRESS": "Address",
+		"UF": "State",
+		"MUNICIPIO": "County",
+		"PROCESSO": "Process",
+		"CLASSE": "Class",
+		"ANO": "Year",
+		"IDESTACAO": "Idtation",
+		"NOME": "Name",
+		"STATUS": "Status",
+		"CODESTACAO": "Co-Station",
+		"IDMUNICIPIO": "Municipality ID",
+		"CIDADE": "City",
+		"CODIBGEMUNICIPIO": "Code Ibge Municipality",
+		"IDREDE": "Network",
+		"NOMEREDE": "Networkname",
+		"SIGLAREDE": "Acronym",
+		"IDTIPOESTACAO": "Station ID",
+		"DESCRICAOESTACAO": "Description Station",
+		"OFFSET": "Offset",
+		"COTAATENCAO": "Attention",
+		"COTAALERTA": "Cotaalert",
+		"MEDICAO": "Measurement",
+		"UNIDADEMEDICAO": "Unit Medication",
+		"SITUATION": 	"Situation",
+		"EVENTDATE": "Eventdate",
+		"EVENTTIME": "Eventtime",
+		"EVENTADDRESS": "Event Address",
+		"INSTITUTENAME": "Institutename",
+		"INSTITUTETYPE": "Institutetype",
+		"RAINAMOUNT": "Rain amount",
+		"COTATRANSBORDAMENTO": "Overflow Quota",
+		"COMMENTS": "Comments"
+	}
+}

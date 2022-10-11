@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="card bg-light">
+    <div class="row">
+      <div class="col-5 mt-6 d-none d-sm-block" style="width: 50%;">
+        <article class="card-body mx-auto align-bottom" style="margin-top: 15%; max-width: 500px;">
+          <h4 class="mt-6 pt-6">{{ 'USER.SIGNUP.WHY_REGISTER' | translate }}</h4>
+          <ul>
+            <li>{{ 'USER.SIGNUP.POINT_1' | translate }}</li>
+            <li>{{ 'USER.SIGNUP.POINT_2' | translate }}</li>
+          </ul>
+        </article>
+      </div>
+      <div class="col-1 d-none d-sm-block">
+        <hr class="verticalHr">
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-outline-dark float-right" (click)="close()" title="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <article class="card-body mx-auto" >
+          <h4 class="card-title mt-3 text-center">{{ 'USER.LOGIN.HEADER' | translate }}</h4>
+          <p class="text-center">{{ 'USER.LOGIN.TITLE' | translate }}</p>
+        <form class="px-4 py-3" *ngIf="!isLoggedIn()">
+          <div class="form-group">
+            <label for="email">{{ 'USER.LOGIN.EMAIL' | translate }}</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="user.username" name="username" placeholder="{{ 'USER.LOGIN.EMAIL_PLACEHOLDER' | translate }}">
+          </div>
+          <div class="form-group">
+            <label for="password">{{ 'USER.LOGIN.PASSWORD' | translate }}</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password" placeholder="{{ 'USER.LOGIN.PASSWORD' | translate }}">
+          </div>
+          <!-- <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck">
+                Remember me
+              </label>
+            </div>
+          </div> -->
+          <button class="btn btn-primary" (click)="login()">{{ 'USER.LOGIN.BTN_SINGIN' | translate }}</button>
+        </form>
+      </article>
+<!-- <a class="dropdown-item" routerLink="profile" routerLinkActive="active" *ngIf="isLoggedIn()">{{ 'USER.LOGIN.PROFILE' | translate }}</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" routerLink="register" *ngIf="!isLoggedIn()">{{ 'USER.LOGIN.SIGNUP' | translate }}</a>
+<a class="dropdown-item" routerLink="forgotPassword" *ngIf="!isLoggedIn()">{{ 'USER.LOGIN.FORGOT_PASSWORD' | translate }}</a>
+<button class="dropdown-item" *ngIf="loggedIn" (click)="logout()">{{ 'USER.LOGIN.LOGOUT' | translate }}</button> -->
+      </div>
+    </div>
+
+  </div> <!-- card.// -->
+</div>

@@ -1,0 +1,164 @@
+
+<!-- ------------ Working code ---------------- -->
+<!-- <mat-drawer-container class="example-container" [hasBackdrop]=false>
+  <mat-drawer #drawer [mode]="'side'" style="width: 30em;">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <mat-drawer-content style="height: 93vh !important;">
+    <app-map></app-map>
+  </mat-drawer-content>
+</mat-drawer-container> -->
+<!-- ------------ Working code ends---------------- -->
+
+<app-map [sidebarVisible]="sidebarVisibility"></app-map>
+<div class="row main-row d-flex">
+  <div class="col-sm-4 col-md-3 sidebar sidebar-left" #sidebarLeft id="sidebarLeft" *ngIf="sidebarVisibility">
+
+    <!-- accordion start -->
+    <div class="accordion sidebar-body m-2 wpd-border" id="accordionExample">
+      <!-- gotoLocation menu -->
+      <goto-location></goto-location>
+      <!-- functionality menu -->
+      <div class="card border-bottom">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <div class="row">
+            <div class="col-10">
+              <button class="btn btn-link btn-block text-left mt-2" type="button" (click)="toggleMainFeature()" data-toggle="collapse" data-target="#collapseFeature" aria-expanded="true" aria-controls="collapseFeature">
+                <i class="fa fa-list-alt"></i> {{ 'MAP.LAYER' | translate }}
+              </button>
+            </div>
+            <div class="col-2">
+              <!-- <span class="float-right slide-submenu" (click)="toggleSidebar()">
+                <i class="fa fa-chevron-left"></i>
+              </span> -->
+              <button mat-icon-button (click)="toggleLeftSidebar()" class="float-right">
+                <mat-icon class="mat-icon-rtl-mirror">
+                  {{sidebarVisibility ? 'chevron_left' : 'chevron_right'}}
+                </mat-icon>
+              </button>
+            </div>
+          </div>
+          </h2>
+        </div>
+    
+        <div id="collapseFeature" class="collapse" [ngClass]="{ 'show': mainFeatureVisibility }" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body px-2 main-menu-body">
+            <!-- <button type="button" class="list-group-item list-group-item-action active">
+              Flood Perception Map
+            </button>
+            <button type="button" class="list-group-item list-group-item-action">Data Daries</button>
+            <button type="button" class="list-group-item list-group-item-action">Flood Memories</button> -->
+            <!-- <div class="custom-control custom-checkbox" *ngFor="let l of layers">
+              <input class="custom-control-input" type="checkbox" value="" id="{{l.id}}" (change)="layerSelected(l)" checked>
+              <label class="custom-control-label" for="{{l.id}}">
+                {{l.label}}
+              </label>
+            </div> -->
+
+            <!-- <app-tree-checkbox (activateFMList)="activateFM($event)"></app-tree-checkbox> -->
+            <app-tree-checkbox></app-tree-checkbox>
+          </div>
+        </div>
+      </div>
+      <!-- sub menu -->
+      <!-- <div class="card my-2" [hidden]="!subFeatureVisibility"> -->
+      <div class="card my-2" [hidden]="!(multiFeatureList || activeFm)">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" (click)="toggleSubFeatureBody()" data-toggle="collapse" data-target="#subFeature" aria-expanded="false" aria-controls="subFeature">
+              <i class="fa fa-list-alt"></i> {{ 'MAP.DETAIL' | translate }}
+            </button>
+          </h2>
+        </div>
+        <div id="subFeature" class="collapse" [ngClass]="{ 'show': subBodyVisibility }" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body sub-menu" *ngIf="!(multiFeatureList && activeFm)">
+            <flood-memories *ngIf="!multiFeatureList && activeFm"></flood-memories>
+            <features-list *ngIf="multiFeatureList && !activeFm" [features]=clickedFeatures></features-list>
+          </div>
+          <div class="card-body sub-menu" *ngIf="(multiFeatureList && activeFm)">
+            <flood-memories></flood-memories>
+            <features-list [features]=clickedFeatures></features-list>
+          </div>
+        </div>
+      </div>
+    </div> <!-- accordion ends -->
+
+  </div>
+  <div class="col-sm-4 col-md-6 mid"></div>
+  <div class="col-sm-4 col-md-3 sidebar sidebar-right" #sidebarRight id="sidebarRight" *ngIf="sidebarRightVisibility">
+    <!-- accordion start -->
+    <div class="accordion sidebar-body m-2 wpd-border" id="accordionRight">
+      <!-- functionality menu -->
+      <div class="card border-bottom">
+        <div class="card-header" id="legendNBaseHeader">
+          <h2 class="mb-0">
+            <div class="row">
+              <div class="col-2">
+                <!-- <span class="float-right slide-submenu" (click)="toggleSidebar()">
+                  <i class="fa fa-chevron-left"></i>
+                </span> -->
+                <button mat-icon-button (click)="toggleRightSidebar()" class="float-center">
+                  <mat-icon class="mat-icon-rtl-mirror">
+                    <!-- {{sidebarVisibility ? 'chevron_left' : 'chevron_right'}} -->
+                    chevron_right
+                  </mat-icon>
+                </button>
+              </div>
+              <div class="col-10">
+                <button class="btn btn-link btn-block text-left mt-2" type="button" (click)="toggleRightSidebar()" data-toggle="collapse" data-target="#legendNBase" aria-expanded="true" aria-controls="legendNBase">
+                  <i class="fa fa-list-alt"></i> {{ 'MAP.MAP_DETAILS' | translate}}
+                </button>
+              </div>
+            </div>
+          </h2>
+        </div>
+        <div id="legendNBase" class="collapse" [ngClass]="{ 'show': legendVisibility }" aria-labelledby="legendNBase" data-parent="#legendAcc">
+          <div class="card-body px-2 main-menu-body">
+            <div>
+              <p class="text-center font-weight-bold">{{ 'MAP.BASE_MAP' | translate}}</p>
+            
+              <div class="btn-group btn-group-toggle d-flex justify-content-between" data-toggle="buttons">
+                <label class="btn btn-secondary active m-1">
+                  <i class="fas fa-adjust"></i>
+                  <input type="radio" name="baseMap" id="dark" (change)="baseLayerChanged($event)"> {{ 'MAP.BASE_DARK' | translate}}
+                </label>
+                <label class="btn btn-secondary m-1">
+                  <i class="fas fa-satellite"></i>
+                  <input type="radio" name="baseMap" id="satellite" (change)="baseLayerChanged($event)"> {{ 'MAP.BASE_SAT' | translate}}
+                </label>
+                <label class="btn btn-secondary m-1">
+                  <img id="logo_giscience" src="assets/img/osm_logo.svg" height="15px">
+                  <input type="radio" name="baseMap" id="osm" (change)="baseLayerChanged($event)"> OSM
+                </label>
+              </div>
+            </div>
+            <!-- <div *ngIf="legendSrcs.length > 0 || subFeatureVisibility"> -->
+            <div [hidden]="!showLegends">
+              <hr>
+              <p class="text-center font-weight-bold">{{ 'MAP.LEGEND' | translate}}</p>
+              <!-- <p *ngIf="subFeatureVisibility" class="mx-4"> -->
+                <div id="hotAndFmLegend" class="mx-4">
+                  <!-- Legends are filled dynamically from ts code here -->
+                </div>
+              <!-- </p> -->
+              <!-- class="d-flex justify-content-center" -->
+              <div *ngFor="let legendSrc of legendSrcs" class="mx-4">
+                <span *ngIf="legendSrc.name=='SP_WaterLevel_Street' || legendSrc.name=='SP_WaterLevel_Home'">WaterLevel</span><br>
+                <img id="legendGraphic" alt="Legend" [src]="legendSrc.url">
+                <br><img *ngIf="legendSrc.name=='SP_WaterLevel_Street' || legendSrc.name=='SP_WaterLevel_Home'" id="scala" alt="scala" src="assets/img/waterlevel_scala.png" width="200px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- accordion ends -->
+  </div>
+</div>
+<button *ngIf="!sidebarVisibility" (click)="toggleLeftSidebar()" class="mini-submenu mini-submenu-left logo">
+  <i class="fas fa-list-ul"></i>
+</button>
+<button *ngIf="!sidebarRightVisibility" (click)="toggleRightSidebar()" class="mini-submenu mini-submenu-right logo">
+  <i class="fas fa-list-ul"></i>
+</button>

@@ -1,0 +1,40 @@
+.map {
+    border: 1px solid grey;
+    /* background-color: #d9d9d9;
+    border-radius: 3px;
+    height: 93vh; */
+    width: 100%; 
+    position: absolute; 
+    top: 50px; 
+    bottom: 0px; 
+    left: 0px; 
+    right: 0px;
+    z-index: 35;
+}
+
+#slider_container {
+    z-index: 100;
+    /* position: fixed; */
+    position: absolute;
+    /* bottom: 10vh; */
+    bottom: 5vh;
+    width: 70%;
+    /* padding: 0 10vw; */
+    margin: 0 10vw;
+    padding: 0 5vw;
+}
+  
+#slider_container > mat-slider {
+    width: 80vw;
+}
+
+.wpd-border {
+    background-color: rgba(255,255,255,.6);
+    /* background-color: rgba(123,181,196,.6); */
+    border: 3px solid rgba(255,255,255,1);
+    border-radius: 4px;
+}
+
+.wpd-border:hover {
+    background-color: rgba(255,255,255,.9);
+}

@@ -1,0 +1,32 @@
+<div class="form-group">
+<label for="location">{{ 'EDIT_FM.ADDRESS' | translate }}</label>
+    <!-- <input type="text" class="form-control" formControlName="formLocation" [ngClass]="{'is-invalid': formLocation.errors && (formLocation.touched || formLocation.dirty), 'is-valid':formLocation.valid}" aria-describedby="locationHelp"> -->
+    <!-- [ngClass]="{'is-invalid': formLocation.errors && (formLocation.touched || formLocation.dirty), 'is-valid':formLocation.valid}" -->
+    <!-- [ngClass]="{'is-invalid': (formLocation.touched || formLocation.dirty) && !locationValid, 'is-valid':locationValid}" -->
+    <div class="input-group">
+    <input type = "text" 
+        class="form-control"
+        placeholder = "{{ 'EDIT_FM.ADDRESS_PLACEHOLDER' | translate }}" 
+        aria-label = "Location" 
+        matInput 
+        [formControl] = "formLocation" 
+        [matAutocomplete] = "auto"
+        [ngStyle]="{'border': '1px solid #ced4da'}">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+         <mat-option *ngFor="let loc of locations | async" 
+            [value]="loc"
+            (click)="locationValid=true"
+            style="font-size: 12px;">
+            {{loc.properties.title}}
+         </mat-option>
+      </mat-autocomplete>
+      <!-- <span class="input-group-btn">
+        <button class="btn btn-outline-dark" type="button" (click)="toggleMap()">{{ 'EDIT_FM.PICK_ON_MAP' | translate }}</button>
+        <span class="caret"></span>
+      </span> -->
+    </div>
+    <div id="mapWrapper" class="mapWrapper" [hidden]="!isShowMap">
+      <div id="pickOnMap" class="map" style="height: 20vh"></div>
+    </div>
+    <small id="locationHelp" class="form-text text-muted">{{ 'EDIT_FM.ADDRESS_HINT' | translate }}</small>
+  </div>

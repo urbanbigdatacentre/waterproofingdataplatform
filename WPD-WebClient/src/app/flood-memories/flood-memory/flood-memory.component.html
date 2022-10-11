@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>{{fmData.title}}
+  <button type="button" class="btn btn-outline-dark float-right" (click)="onCloseClick()" title="Close">
+    <i class="fas fa-times"></i>
+  </button>
+</h1>
+<div mat-dialog-content>
+  <div *ngIf="isApproxDate">
+    <p id="fmDate">{{ "FLOODMEMORY.DATE" | translate }} : {{fmDate}} {{ "FLOODMEMORY.APPROXDATE" | translate }}</p>
+  </div>
+  <div *ngIf="!isApproxDate">
+    <p id="fmDate">{{ "FLOODMEMORY.DATE" | translate }} : {{fmDate}}</p>
+  </div>
+  <p id="contentHolder"></p>
+  <div *ngIf="imageObject.length>0" class="border border-secondary rounded">
+    <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+  </div>
+  <div *ngIf="imageObject.length==0" class="border border-secondary rounded py-5">
+    <span class="d-flex justify-content-center">{{ "FLOODMEMORY.NOMEDIA" | translate }}</span>
+  </div>
+  <!-- <mat-form-field>
+    <input matInput [(ngModel)]="data">
+
+  </mat-form-field> -->
+</div>
+<div mat-dialog-actions>
+  <!-- <button mat-raised-button (click)="onCloseClick()">Close</button> -->
+  <button mat-raised-button *ngIf="isAllowedtoEdit" (click)="onEditClick()">{{ "FLOODMEMORY.EDIT_BTN" | translate }}</button>
+  <!-- <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button> -->
+  <button mat-raised-button *ngIf="isAllowedtoEdit" (click)="onDeleteClick()">{{ "FLOODMEMORY.DELETE_BTN" | translate }}</button>
+</div>

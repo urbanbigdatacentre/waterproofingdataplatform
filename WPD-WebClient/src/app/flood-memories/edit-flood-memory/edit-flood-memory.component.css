@@ -1,0 +1,15 @@
+
+.mapWrapper {
+  height: 20.2vh;
+  /* width: inherit; */
+  /* border: 1px solid black; */
+}
+
+.modal-body{
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.custom-addEditFMmodalbox >  mat-dialog-container {
+  padding: 10px;
+}

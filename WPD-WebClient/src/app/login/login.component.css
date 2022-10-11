@@ -1,0 +1,7 @@
+.verticalHr {
+  margin-left:5px;
+  margin-right:5px;
+  width:1px;
+  height:90%;
+  border-left:1px solid gray;     
+}

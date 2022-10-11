@@ -1,0 +1,31 @@
+.example-tree {
+  font-size: x-small;
+}
+
+.example-tree-invisible {
+  display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.icon-button {
+  width: 24px!important;
+  min-width: unset!important;
+  height: 24px!important;
+  min-height: unset!important;
+}
+
+.mat-tree-node {
+  min-height: auto !important;
+}
+
+.chipStyle {
+  font-size: 10px; 
+  min-height: 0; 
+  line-height: 0;
+}

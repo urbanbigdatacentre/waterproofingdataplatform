@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>{{feature.formcode_title}}
+  <button type="button" class="btn btn-outline-dark float-right" (click)="onCloseClick()" title="Close">
+    <i class="fas fa-times"></i>
+  </button>
+</h1>
+<div mat-dialog-content>
+  ID: {{feature.formsanswersid}}
+
+  <div class="row" *ngFor="let attr of featureAttributes">
+  <div class="col-sm-4">
+    <span >
+      {{attr.fieldlabel}}
+    </span>
+  </div>
+  <div class="col-sm-8">
+    <span >
+      {{attr.fieldsanswersvalue}}
+    </span>
+  </div>
+  </div>
+
+  <ngx-charts-line-chart
+    *ngIf="isPluvio"
+    [view]="view"
+    [scheme]="colorScheme"
+    [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [timeline]="timeline"
+    [results]="chartData"
+    (select)="onSelect($event)"
+    (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)"
+    >
+  </ngx-charts-line-chart>
+</div>

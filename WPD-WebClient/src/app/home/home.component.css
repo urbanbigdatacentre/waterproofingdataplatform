@@ -1,0 +1,88 @@
+
+.mini-submenu{
+  /* display:none;   */
+  background-color: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;  
+  /*position: relative;*/
+  width: 42px;
+  text-align: center;
+
+  /* background-color: rgba(0, 60, 136,1);
+  border: 3px solid rgba(255,255,255,1);
+  border-radius: 4px; */
+  /* width: 2em;
+  height: 2em; */
+  /* opacity: 0.5;
+  transition: opacity 0.5s; */
+}
+
+.mini-submenu-left {
+  position: absolute;
+  top: 60px;
+  left: .5em;
+  z-index: 40;
+}
+.mini-submenu-right {
+  position: absolute;
+  top: 60px;
+  right: .5em;
+  z-index: 40;
+}
+
+.sidebar { z-index: 45; }
+
+.main-menu-body { 
+  /* display: flex; */
+  max-height: 30vh;
+  overflow: auto;
+}
+
+.main-row { 
+  position: relative; 
+  top: 0; 
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.sub-menu {
+  max-height: 25vh;
+  overflow-y: auto;
+}
+
+.wpd-border {
+  background-color: rgba(255,255,255,.6);
+  /* background-color: rgba(123,181,196,.6); */
+  border: 3px solid rgba(255,255,255,1);
+  border-radius: 4px;
+  padding: 4px;
+}
+
+/* .mini-submenu:hover{
+  cursor: pointer;
+} */
+
+/* .slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* .show {
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.card-header {
+  font-size: 11.5rem;
+}
+
+.sidebar.collapsed {
+  width: 40px; 
+} */

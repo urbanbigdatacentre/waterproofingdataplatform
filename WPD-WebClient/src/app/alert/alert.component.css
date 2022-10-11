@@ -1,0 +1,9 @@
+#alertMessage {
+  z-index: 9999;
+  position: absolute;
+  top: 5vh;
+  left: 20vw;
+  width: 60%;
+  /* justify-self: stretch; */
+  /* padding: 0 10vw; */
+}

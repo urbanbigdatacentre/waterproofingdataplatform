@@ -1,0 +1,19 @@
+<div class="sidebar-header mb-3">
+  <h5 class="mb-3">{{ 'LEFT_SIDEBAR.LIVE_FEATURES_LIST.TITLE' | translate }}
+  </h5>
+</div> 
+  
+<div *ngIf="features.length>0">
+  <div class="list-group fmlist">
+    <div *ngFor="let feature of features">
+      <button 
+        class="list-group-item list-group-item-action"
+        (click)="showFeatureDetail(feature)"
+        title="{{feature.formcode_title}} : {{feature.formsanswersid}}">
+        {{feature.formsanswersid}}
+          <!-- <i class="fas fa-brain float-right"></i> -->
+          <img src="assets/img/{{feature.formcode}}.png" class="float-right" width="26px">
+      </button>
+    </div>
+  </div>
+</div>

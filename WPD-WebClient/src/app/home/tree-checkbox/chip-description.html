@@ -1,0 +1,10 @@
+<button type="button" class="btn btn-outline-dark float-right" (click)="closeDialog()" title="Close">
+  <i class="fas fa-times"></i>
+</button>
+<h2>{{ data.name | translate }}</h2>
+<mat-dialog-content class="mat-typography">
+  <!-- <pre>{{ data.description | translate }}</pre> -->
+  <p style="margin-left: 15px; margin-right: 15px;">
+    {{ data.description | translate }}
+  </p>
+</mat-dialog-content>

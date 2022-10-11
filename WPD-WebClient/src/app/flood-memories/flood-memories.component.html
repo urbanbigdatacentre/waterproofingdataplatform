@@ -1,0 +1,34 @@
+<div class="sidebar-header mb-3">
+  <h3 class="mb-3">{{ 'FLOODMEMORIES.TITLE' | translate }}
+  </h3>
+  <button class="btn btn-outline-secondary btn-round-sm btn-block" (click)="showAddFloodMemory()" title="{{ 'FLOODMEMORIES.ADD_FM_TOOLTIP' | translate }}">
+    {{ 'FLOODMEMORIES.ADD_FM' | translate }}&nbsp;
+    <i class="fas fa-plus-circle"></i>
+  </button>
+</div> 
+  
+<!-- <div *ngIf="memories.length>0" class="p-3"> -->
+<div *ngIf="memories.length>0">
+  <div class="list-group fmlist">
+    <div *ngFor="let memory of memories">
+      <button 
+        class="list-group-item list-group-item-action" 
+        [ngClass]="{ 'active': isFMHovered(memory.id) }" 
+        (click)="showDetailMemory(memory)"
+        (mouseover)="mouseOverFMFromList(memory)"
+        (mouseout)="mouseOverFMFromList(null)">
+          {{memory.title}}
+          <!-- <i class="fas fa-brain float-right"></i> -->
+          <!-- <img src="assets/img/flood_black.png" class="float-right" width="16px"> -->
+          <img src="assets/img/FLOODMEMORY.png" class="float-right" width="16px">
+      </button>
+    </div>
+  </div>
+</div>
+<div *ngIf="memories.length==0">
+  <div class="list-group fmlist">
+    <span class="list-group-item">{{ 'FLOODMEMORIES.NO_MEMORIES' | translate}}</span>
+  </div>
+</div>
+<!-- <hr>
+<button class="btn btn-primary float-right" *ngIf="loggedIn" (click)="showAddFloodMemory()">{{ 'FLOODMEMORIES.ADD_FM' | translate }}</button> -->

@@ -1,0 +1,98 @@
+<h1 *ngIf="! loggedIn">{{ 'USER.PROFILE.LOGIN_MESSAGE' | translate }}</h1>
+<div *ngIf="loggedIn" class="container">
+  <button type="button" class="btn btn-outline-dark float-right" (click)="close()" title="Close">
+    <i class="fas fa-times"></i>
+  </button>
+  <div class="form m-2" [formGroup]="formData">
+    <div class="row">
+      <div class="col-sm-9">
+        <h3>{{ 'USER.PROFILE.PROFILE_HEADER' | translate }}</h3>
+      </div>
+      <div class="col-sm-3">
+        <!-- <span class="float-right"><i class="far fa-smile fa-2x"></i></span> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="formName">{{'USER.PROFILE.NAME' | translate }}</label>
+          <input type="text" class="form-control" formControlName="formName"
+            [ngClass]="{'is-invalid': formName.errors && (formName.touched || formName.dirty), 'is-valid':formName.valid}">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="formEmail">{{'USER.PROFILE.EMAIL' | translate }}</label>
+          <input type="text" class="form-control" formControlName="formEmail" disabled
+            [ngClass]="{'is-invalid': formEmail.errors && (formEmail.touched || formEmail.dirty), 'is-valid':formEmail.valid}">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="formPassword">{{'USER.PROFILE.NEW_PASSWORD' | translate }}</label>
+          <input type="password" class="form-control" formControlName="formPassword" placeholder="{{'USER.PROFILE.PASSWORD_PLACEHOLDER' | translate }}"
+            [ngClass]="{'is-invalid': formPassword.errors && (formPassword.touched || formPassword.dirty), 'is-valid':formPassword.valid}">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <button class="btn btn-outline-secondary float-right" (click)="saveProfile()">{{ 'USER.PROFILE.BTN_UPDATE' | translate }}</button>
+      </div>
+    </div>
+  </div>
+  <!-- Table -->
+  <div class="row my-2">
+    <div class="col-sm-12">
+      <span class="h5 mx-2">{{ 'USER.PROFILE.FM_LIST' | translate }}</span>
+    </div>
+  </div>
+  <div class="row" [hidden]="emptyFMData">
+    <div class="col-sm-12">
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="fmDataSource">
+      
+          <!-- Position Column -->
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>{{ 'USER.PROFILE.ID' | translate }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+      
+          <!-- Name Column -->
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef>{{ 'USER.PROFILE.TITLE' | translate }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+      
+          <!-- Weight Column -->
+          <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>{{ 'USER.PROFILE.DATE' | translate }}</th>
+            <td mat-cell *matCellDef="let element"> {{element.description.time}} </td>
+          </ng-container>
+      
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef>{{ 'USER.PROFILE.ACTION' | translate }}</th>
+            <td mat-cell *matCellDef="let element"> 
+              <!-- {{element.action}}  -->
+              <button mat-raised-button class="mx-3" (click)="editFloodMemory(element)">{{ 'USER.PROFILE.EDIT' | translate }}</button> 
+              <button mat-raised-button class="mx-3" (click)="deleteFloodMemory(element)">{{ 'USER.PROFILE.DELETE' | translate }}</button> 
+            </td>
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+      </div>
+    </div>
+  </div>
+
+  <div class="border border-secondary rounded py-5" [hidden]="! emptyFMData">
+    <span class="d-flex justify-content-center">{{ 'USER.PROFILE.NO_FM' | translate }}</span>
+  </div>
+  <p id="contentHolder" style="display: none"></p>
+</div>
