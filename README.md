@@ -18,8 +18,9 @@ Germany and the United Kingdom.
 
 ## About this repo
 
-This is a repository that compiles the different components developed for the [Waterproofing Data project](https://www.ubdc.ac.uk/research/research-projects/urban-sustainability-participation/waterproofing-data/).
-It includes the different elements working together to make
+This is a repository that compiles the different components developed for the [Waterproofing Data project](https://www.ubdc.ac.uk/research/research-projects/urban-sustainability-participation/waterproofing-data/). It includes the different elements working together to make possible the integration of citizen-generated data about flooding and official rainfall records. The platform support two interfaces: a mobile application for flood data collection and a dashboard for aggregated and site specific data visualisation. Complementary, the platform uses a data lake to ingest different data types and formats that combines azure function and azure data lake gen2 technologies. To complete the technological stack, there are transformation functions, a metadata oriented database, a user authentication module and a query API to enable data access.
+
+The idea of a platform aims at implementing a novel reference architecture that brings together cutting edge technologies to citizen-science. Therefore, the data platform is designed and implemented to potentially support data production and integration for other risk-related events.
 
 ## Getting the project
 
